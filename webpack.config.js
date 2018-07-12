@@ -3,8 +3,10 @@ const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
-const HtmlWebpackInlineSVGPlugin = require('html-webpack-inline-svg-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const marked = require('marked');
+
+const contentEn = require('fs').readFileSync('./src/content.en.md', 'utf8');
 
 const IS_PROD = process.env.NODE_ENV === 'production';
 
@@ -21,11 +23,10 @@ module.exports = {
         enforce: 'post',
         test: /\.css$/,
         loader: IS_PROD ? ExtractTextPlugin.extract({
-          fallback: 'vue-style-loader',
+          fallback: 'style-loader',
           use: 'css-loader',
-        }) : 'vue-style-loader!css-loader?sourceMap',
-      },
-      {
+        }) : 'style-loader!css-loader?sourceMap',
+      }, {
         enforce: 'pre',
         test: /\.(js)$/,
         loader: 'eslint-loader',
@@ -35,28 +36,15 @@ module.exports = {
           failOnWarning: false,
         },
         exclude: /node_modules/,
-      },
-      {
+      }, {
         test: /\.js$/,
         loader: 'babel-loader',
         exclude: /node_modules/,
-      },
-      {
-        test: /\.(png|jpg|gif|otf)$/,
+      }, {
+        test: /\.(png|jpg|gif|otf|svg)$/,
         loader: 'file-loader',
         options: {
           name: '[name].[ext]?[hash]',
-        },
-      },
-      {
-        test: /\.svg$/,
-        loader: 'vue-svg-loader',
-        options: {
-          svgo: {
-            plugins: [
-              { cleanupIDs: false },
-            ],
-          },
         },
       },
     ],
@@ -79,12 +67,12 @@ module.exports = {
     new FaviconsWebpackPlugin('./src/assets/logo.svg'),
     new HtmlWebpackPlugin({
       filename: 'index.html',
-      template: 'src/index.html',
-      svgoConfig: {
-        collapseGroups: false,
+      template: 'src/index.ejs',
+      templateParameters: {
+        content: marked(contentEn),
+        lang: 'en'
       },
     }),
-    new HtmlWebpackInlineSVGPlugin(),
   ],
 };
 

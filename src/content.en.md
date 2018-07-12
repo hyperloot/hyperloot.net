@@ -2,11 +2,6 @@
 
   # OPEN SOURCE DECENTRALIZED PLATFORM FOR CROSS-GAME DIGITAL ASSET EXHCANGE
 
-</section>
-
-
-<section id="loremipsum">
-
   Hyperloot is an open-source platform that turns in-game items into crypto-assets backed by tokens.
   It's build around a proven tech stack utilizing the most proven standards.
   We are creating a gamer community-driven platform
@@ -14,15 +9,10 @@
 
 </section>
 
-<section id="loremipsum">
+<section id="solution">
 
   ## HyperLoot Open Protocol Solution
   Backing in-game items with tradeable tokens, empowering peer-to-peer cross-game trading through a marketplace.
-
-</section>
-
-
-<section id="loremipsum">
 
   * Hyperloot utilizes Ethereum blockchain as a proven and reliable infrastructure
   * Marketplace and wallets – a place where assets are stored and can be exchanged.
@@ -32,7 +22,7 @@
 </section>
 
 
-<section id="loremipsum">
+<section id="details">
 
   ## Create
   Multiple crypto-secured assets starting with in-game purchases all the way to user accounts.
@@ -46,17 +36,12 @@
 </section>
 
 
-<section id="loremipsum">
+<section id="benefits">
 
   ## Built for gamers
   1. Forever direct ownership of what you paid for
   2. Open and accessible trading inside or between games
   3. Connect, trade and profit with an all-gamer community
-
-</section>
-
-
-<section id="loremipsum">
 
   ## With developers in mind
   1. Easy and quick to integrate without changing your code
@@ -66,23 +51,20 @@
 </section>
 
 
-<section id="loremipsum">
+<section id="started">
 
-  ## Newbies
+  ## Get Started...
+
+  ### Newbies
   Learn how to buy, sell and store HLPT tokens, or get involved with the HyperLoot community (Where?)
 
-  ## Developers
+  ### Developers
   Take a look at what we’re working on. Join GitHub to learn more.
 
-</section>
-
-
-<section id="loremipsum">
-
-  ## Miners
+  ### Miners
   Earn HyperLoot tokens by joining the decentralised HyperLoot network (How?)
 
-  ## Foundation
+  ### Foundation
   If you would like to get involved, or would simply like to support the team, there are handful of options at your disposal. *Contact?
 
 </section>
