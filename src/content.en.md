@@ -1,4 +1,4 @@
-<section id="intro">
+<section class="intro">
 
 # OPEN SOURCE DECENTRALIZED PLATFORM FOR CROSS-GAME DIGITAL ASSET EXHCANGE
 
@@ -9,7 +9,7 @@ to interact with developers as a Hyperloot DAO.
 
 </section>
 
-<section id="solution">
+<section class="solution">
 
 ## HyperLoot Open Protocol Solution
 Backing in-game items with tradeable tokens, empowering peer-to-peer cross-game trading through a marketplace.
@@ -22,7 +22,7 @@ Backing in-game items with tradeable tokens, empowering peer-to-peer cross-game 
 </section>
 
 
-<section id="details">
+<section class="details">
 
 ## Create
 Multiple crypto-secured assets starting with in-game purchases all the way to user accounts.
@@ -36,7 +36,7 @@ Any way you can imagine. A better-than-free model where you utilize your own ite
 </section>
 
 
-<section id="benefits">
+<section class="benefits">
 
 ## Built for gamers
 
@@ -54,7 +54,7 @@ Any way you can imagine. A better-than-free model where you utilize your own ite
 </section>
 
 
-<section id="started">
+<section class="started">
 
 ## Get Started...
 
