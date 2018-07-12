@@ -4,9 +4,6 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const marked = require('marked');
-
-const contentEn = require('fs').readFileSync('./src/content.en.md', 'utf8');
 
 const IS_PROD = process.env.NODE_ENV === 'production';
 
@@ -46,7 +43,18 @@ module.exports = {
         options: {
           name: '[name].[ext]?[hash]',
         },
-      },
+      },{
+        test: /\.md$/,
+        use: [
+          {
+            loader: "html-loader"
+          },
+          {
+            loader: "markdown-loader",
+            options: {}
+          }
+        ]
+      }
     ],
   },
   resolve: {
@@ -69,7 +77,6 @@ module.exports = {
       filename: 'index.html',
       template: 'src/index.ejs',
       templateParameters: {
-        content: marked(contentEn),
         lang: 'en'
       },
     }),
