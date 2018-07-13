@@ -27,3 +27,19 @@ section p,
 section li {
   font-size: 1.5rem;
 }
+
+.intro {
+
+}
+
+.intro a[href="/"] img {
+  display: inline-block;
+  width: 4rem;
+}
+
+.intro a[href="/"] {
+  color: inherit;
+  text-decoration: none;
+  font-size: 3rem;
+  font-weight: normal;
+}
