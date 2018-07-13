@@ -13,6 +13,11 @@ b, strong, a, h1, h2 {
   font-weight: bold;
 }
 
+a {
+  color: #f53743;
+  text-decoration: none;
+}
+
 /* fonts */
 @font-face{
   font-family: 'Gilroy';
@@ -27,3 +32,5 @@ b, strong, a, h1, h2 {
 
 /* */
 @import './header.css';
+@import './content.css';
+@import './footer.css';

@@ -1,6 +1,6 @@
-<section class="intro">
+<section class="section intro">
 
-# OPEN SOURCE DECENTRALIZED PLATFORM FOR CROSS-GAME DIGITAL ASSET EXHCANGE
+# Open source decentralized platform for cross-game digital asset exhcange
 
 Hyperloot is an open-source platform that turns in-game items into crypto-assets backed by tokens.
 It's build around a proven tech stack utilizing the most proven standards.
@@ -9,7 +9,7 @@ to interact with developers as a Hyperloot DAO.
 
 </section>
 
-<section class="solution">
+<section class="section solution">
 
 ## HyperLoot Open Protocol Solution
 Backing in-game items with tradeable tokens, empowering peer-to-peer cross-game trading through a marketplace.
@@ -22,7 +22,7 @@ Backing in-game items with tradeable tokens, empowering peer-to-peer cross-game 
 </section>
 
 
-<section class="details">
+<section class="section details">
 
 ## Create
 Multiple crypto-secured assets starting with in-game purchases all the way to user accounts.
@@ -36,7 +36,7 @@ Any way you can imagine. A better-than-free model where you utilize your own ite
 </section>
 
 
-<section class="benefits">
+<section class="section benefits">
 
 ## Built for gamers
 
@@ -54,7 +54,7 @@ Any way you can imagine. A better-than-free model where you utilize your own ite
 </section>
 
 
-<section class="started">
+<section class="section started">
 
 ## Get Started...
 
