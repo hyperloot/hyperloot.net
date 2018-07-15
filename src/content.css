@@ -1,18 +1,29 @@
-section.section {
+.section {
   margin-left: auto;
   margin-right: auto;
   max-width: 94rem;
   padding: 2rem;
   box-sizing: border-box;
 
-  min-height: 100vh;
+  /*min-height: 100vh;*/
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-top: 15rem;
+  padding-bottom: 15rem;
+}
+
+section p,
+section h1,
+section h2,
+section h3 {
+  margin: 0;
 }
 
 section h1 {
-  font-size: 4rem;
+  font-size: 6rem;
+  margin-top: 1rem;
+  margin-bottom: 6rem;
 }
 
 section h2 {
@@ -29,7 +40,8 @@ section li {
 }
 
 .intro {
-
+  min-height: 100vh;
+  transform: translateZ(1px);
 }
 
 .intro a[href="/"] img {
@@ -42,4 +54,135 @@ section li {
   text-decoration: none;
   font-size: 3rem;
   font-weight: normal;
+}
+
+.intro a:not([href="/"]) {
+  padding: 1.5rem 3rem;
+  border: 1px solid;
+  margin-right: 2rem;
+}
+
+
+.intro a:not([href="/"]):hover {
+  background: #f53743;
+  color: #fff;
+}
+
+.solution {
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.solution h2 {
+  flex: 100%;
+  margin-bottom: 4rem;
+}
+
+.solution .block {
+  flex: 50%;
+}
+
+.solution li {
+  height: 6rem;
+}
+
+
+.solution .layers-3d ul {
+  padding: 0;
+}
+
+.solution .layers-3d li {
+  height: 6rem;
+  list-style: none;
+  position: relative;
+  font-size: 2rem;
+  color: #f53743;
+}
+
+.solution .layers-3d li:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 8rem;
+  background: #f5374311;
+  z-index: -1;
+  transform: rotateX(90deg) rotateY(0deg) rotateZ(90deg);
+}
+
+.details {
+  transform: translateZ(.5px);
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.details img {
+  width: 3rem;
+  margin-bottom: 1rem;
+}
+
+.details h2 {
+  margin-bottom: 1rem;
+}
+
+.details .block {
+  width: 30%;
+}
+
+.benefits {
+  flex-direction: row;
+  margin: 0;
+  background: #f53743;
+  color: #fff;
+  max-width: initial;
+}
+
+.benefits .block {
+  width: 45%;
+}
+
+.benefits .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.benefits h2 {
+  margin-bottom: 1rem;
+}
+
+.started {
+  max-width: initial;
+  background: #f5f5f5;
+}
+
+.started .wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.started h2 {
+  width: 100%;
+  margin-bottom: 4rem;
+}
+
+.started img {
+  width: 3rem;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+}
+
+.started .block {
+  width: 45%;
+  margin-bottom: 4rem;
+}
+
+.started h3 {
+  margin-bottom: 1rem;
+  display: flex;
+  height: 4rem;
+  align-items: center;
 }

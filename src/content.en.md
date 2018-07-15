@@ -19,12 +19,11 @@
   ## HyperLoot Open Protocol Solution
   <!-- Backing in-game items with tradeable tokens, empowering peer-to-peer cross-game trading through a marketplace. -->
 
-  <div class="block 3d-layers">
+  <div class="block layers-3d">
 
   * Etherium
   * Marketplace & wallet
-  * Alchemy protocol
-  * Client api
+  * Alchemy protocol & Client api
   * Games & apps
 
 
@@ -44,18 +43,21 @@
 <section class="section details">
   <div class="block">
 
+  ![](assets/logo.svg)
   ## Create
   Multiple crypto-secured assets starting with in-game purchases all the way to user accounts.
 
   </div>
   <div class="block">
 
+  ![](assets/logo.svg)
   ## Trade
   Any asset you got! A unified profit pool with an open economy will regulate prices for we4el-demanded items.
 
   </div>
   <div class="block">
 
+  ![](assets/logo.svg)
   ## Promote
   Any way you can imagine. A better-than-free model where you utilize your own items to cross-promote within the community.
 
@@ -64,55 +66,56 @@
 
 
 <section class="section benefits">
+<div class="wrapper">
   <div class="block">
 
-## Built for gamers
+  ## Built for gamers
 
-1. Forever direct ownership of what you paid for
-2. Open and accessible trading inside or between games
-3. Connect, trade and profit with an all-gamer community
+  Forever direct ownership of what you paid for. Open and accessible trading inside or between games. Connect, trade and profit with an all-gamer community
 
 
   </div>
   <div class="block">
 
-## With developers in mind
+  ## With developers in mind
 
-1. Easy and quick to integrate without changing your code
-2. Convert in-game items into crypto-protected assets
-3. Join DAO and attract investments to develop your game
+  Easy and quick to integrate without changing your code. Convert in-game items into crypto-protected assets. Join DAO and attract investments to develop your game
 
 
   </div>
+</div>
 </section>
 
 
 <section class="section started">
+<div class="wrapper">
 
 ## Get Started...
 
   <div class="block">
 
-### Newbies
-Learn how to buy, sell and store HLPT tokens, or get involved with the HyperLoot community (Where?)
+
+  ### ![](assets/logo.svg) Newbies
+  Learn how to buy, sell and store HLPT tokens, or get involved with the HyperLoot community (Where?)
 
   </div>
   <div class="block">
 
-### Developers
-Take a look at what we’re working on. Join GitHub to learn more.
+  ### ![](assets/logo.svg) Developers
+  Take a look at what we’re working on. Join GitHub to learn more.
 
   </div>
   <div class="block">
 
-### Miners
-Earn HyperLoot tokens by joining the decentralised HyperLoot network (How?)
+  ### ![](assets/logo.svg) Miners
+  Earn HyperLoot tokens by joining the decentralised HyperLoot network (How?)
 
   </div>
   <div class="block">
 
-### Foundation
-If you would like to get involved, or would simply like to support the team, there are handful of options at your disposal. *Contact?
+  ### ![](assets/logo.svg) Foundation
+  If you would like to get involved, or would simply like to support the team, there are handful of options at your disposal. *Contact?
 
   </div>
+</div>
 </section>
