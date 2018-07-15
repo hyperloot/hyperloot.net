@@ -43,18 +43,18 @@ module.exports = {
         options: {
           name: '[name].[ext]?[hash]',
         },
-      },{
+      }, {
         test: /\.md$/,
         use: [
           {
-            loader: "html-loader"
+            loader: 'html-loader',
           },
           {
-            loader: "markdown-loader",
-            options: {}
-          }
-        ]
-      }
+            loader: 'markdown-loader',
+            options: {},
+          },
+        ],
+      },
     ],
   },
   resolve: {
@@ -77,7 +77,7 @@ module.exports = {
       filename: 'index.html',
       template: 'src/index.ejs',
       templateParameters: {
-        lang: 'en'
+        lang: 'en',
       },
     }),
   ],
