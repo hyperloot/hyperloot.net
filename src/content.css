@@ -84,7 +84,8 @@ section li {
 }
 
 .solution li {
-  height: 6rem;
+  height: 8rem;
+  list-style: none;
 }
 
 
@@ -93,8 +94,7 @@ section li {
 }
 
 .solution .layers-3d li {
-  height: 6rem;
-  list-style: none;
+  height: 8rem;
   position: relative;
   font-size: 2rem;
   color: #f53743;
@@ -107,7 +107,7 @@ section li {
   height: 8rem;
   background: #f5374311;
   z-index: -1;
-  transform: rotateX(90deg) rotateY(0deg) rotateZ(90deg);
+  transform: rotateX(90deg) rotateY(0deg) rotateZ(0deg);
 }
 
 .details {
@@ -136,7 +136,7 @@ section li {
   margin: 0;
   background: #f53743;
   color: #fff;
-  max-width: initial;
+  max-width: none !important;
 }
 
 .benefits .block {
@@ -153,7 +153,7 @@ section li {
 }
 
 .started {
-  max-width: initial;
+  max-width: none !important;
   background: #f5f5f5;
 }
 
@@ -185,4 +185,56 @@ section li {
   display: flex;
   height: 4rem;
   align-items: center;
+}
+
+@media (max-width: 960px) {
+  .intro {
+    transform: none;
+  }
+
+  .intro h1 {
+    font-size: 4rem;
+    margin-bottom: 3rem;
+  }
+
+  .intro a:not([href="/"]) {
+    display: block;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .section {
+    max-width: 30rem;
+  }
+
+  .solution .layers-3d li,
+  .solution li {
+    height: 14rem;
+  }
+
+  .details {
+    flex-direction: column;
+    transform: none;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .details .block {
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+
+  .benefits .wrapper {
+    flex-direction: column;
+  }
+
+  .benefits .block {
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+
+  .started .block {
+    width: 100%;
+    margin-bottom: 4rem;
+  }
 }
