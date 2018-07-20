@@ -28,6 +28,11 @@ a {
   text-decoration: none;
 }
 
+::selection {
+  color: white;
+  background: #f53743;
+}
+
 .wrapper {
   margin-left: auto;
   margin-right: auto;

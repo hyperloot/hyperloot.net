@@ -43,21 +43,21 @@
 <section class="section details">
   <div class="block">
 
-  ![](assets/logo.svg)
+  ![](assets/create.svg)
   ## Create
   Multiple crypto-secured assets starting with in-game purchases all the way to user accounts.
 
   </div>
   <div class="block">
 
-  ![](assets/logo.svg)
+  ![](assets/trade.svg)
   ## Trade
   Any asset you got! A unified profit pool with an open economy will regulate prices for we4el-demanded items.
 
   </div>
   <div class="block">
 
-  ![](assets/logo.svg)
+  ![](assets/promote.svg)
   ## Promote
   Any way you can imagine. A better-than-free model where you utilize your own items to cross-promote within the community.
 
@@ -69,6 +69,8 @@
 <div class="wrapper">
   <div class="block">
 
+  ![](assets/for_gamers.svg)
+
   ## Built for gamers
 
   Forever direct ownership of what you paid for. Open and accessible trading inside or between games. Connect, trade and profit with an all-gamer community
@@ -76,6 +78,8 @@
 
   </div>
   <div class="block">
+
+  ![](assets/for_developers.svg)
 
   ## With developers in mind
 
@@ -95,25 +99,25 @@
   <div class="block">
 
 
-  ### ![](assets/logo.svg) Newbies
+  ### ![](assets/newbies.svg) Newbies
   Learn how to buy, sell and store HLPT tokens, or get involved with the HyperLoot community (Where?)
 
   </div>
   <div class="block">
 
-  ### ![](assets/logo.svg) Developers
+  ### ![](assets/developers.svg) Developers
   Take a look at what we’re working on. Join GitHub to learn more.
 
   </div>
   <div class="block">
 
-  ### ![](assets/logo.svg) Miners
+  ### ![](assets/miners.svg) Miners
   Earn HyperLoot tokens by joining the decentralised HyperLoot network (How?)
 
   </div>
   <div class="block">
 
-  ### ![](assets/logo.svg) Foundation
+  ### ![](assets/founders.svg) Foundation
   If you would like to get involved, or would simply like to support the team, there are handful of options at your disposal. *Contact?
 
   </div>

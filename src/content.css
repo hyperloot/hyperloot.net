@@ -119,8 +119,10 @@ section li {
 }
 
 .details img {
-  width: 3rem;
-  margin-bottom: 1rem;
+  width: 10rem;
+  margin-bottom: 0rem;
+  margin-left: -1.5rem;
+  user-select: none;
 }
 
 .details h2 {
@@ -137,10 +139,17 @@ section li {
   background: #f53743;
   color: #fff;
   max-width: none !important;
+  padding: 0;
 }
 
 .benefits .block {
   width: 45%;
+  box-sizing: border-box;
+  position: relative;
+  min-height: 40rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .benefits .wrapper {
@@ -150,6 +159,21 @@ section li {
 
 .benefits h2 {
   margin-bottom: 1rem;
+  z-index: 2;
+}
+
+.benefits p {
+  z-index: 2;
+}
+
+.benefits img {
+  user-select: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  opacity: .2;
+  height: 40rem;
 }
 
 .started {
@@ -170,9 +194,11 @@ section li {
 }
 
 .started img {
-  width: 3rem;
+  width: 6rem;
   margin-bottom: 1rem;
   margin-right: 1rem;
+  margin-left: -1rem;
+  user-select: none;
 }
 
 .started .block {
@@ -207,6 +233,10 @@ section li {
     max-width: 30rem;
   }
 
+  .wrapper {
+    max-width: 30rem !important;
+  }
+
   .solution .layers-3d li,
   .solution li {
     height: 14rem;
@@ -228,9 +258,15 @@ section li {
     flex-direction: column;
   }
 
+  .benefits img {
+    width: 25rem;
+    height: 30rem;
+  }
+
   .benefits .block {
     width: 100%;
     margin-bottom: 4rem;
+    min-height: 30rem;
   }
 
   .started .block {
