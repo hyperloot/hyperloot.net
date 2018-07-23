@@ -2,9 +2,9 @@
 
   [![](assets/logo.svg) Hyperloot](/)
 
-  # Open source decentralized platform for cross-game digital asset exhcange
+  # Open source decentralized platform for cross-game digital asset exchange
 
-  [GET WHITE LISTED](https://goo.gl/forms/nWaCLnXFqjoZSxn02)
+  [GET WHITELISTED](https://goo.gl/forms/nWaCLnXFqjoZSxn02)
   [WHITEPAPER](https://goo.gl/forms/lvrgRCfZNuyEQlCF2)
 
   <!-- Hyperloot is an open-source platform that turns in-game items into crypto-assets backed by tokens.
@@ -21,9 +21,9 @@
 
   <div class="block layers-3d">
 
-  * Etherium
+  * Ethereum
   * Marketplace & wallet
-  * Alchemy protocol & Client api
+  * Alchemy protocol & Client API
   * Games & apps
 
 
@@ -52,7 +52,7 @@
 
   ![](assets/trade.svg)
   ## Trade
-  Any asset you got! A unified profit pool with an open economy will regulate prices for we4el-demanded items.
+  Any asset you got! A unified profit pool with an open economy will regulate prices for well-demanded items.
 
   </div>
   <div class="block">
@@ -83,7 +83,7 @@
 
   ## With developers in mind
 
-  Easy and quick to integrate without changing your code. Convert in-game items into crypto-protected assets. Join DAO and attract investments to develop your game
+  Easy and quick to adopt without changing your code. Convert in-game items into crypto-protected assets. Join DAO and attract investments to develop your game
 
 
   </div>
@@ -100,26 +100,27 @@
 
 
   ### ![](assets/newbies.svg) Newbies
-  Learn how to buy, sell and store HLPT tokens, or get involved with the HyperLoot community (Where?)
+  Learn how to buy, sell and store HLPT tokens, or get involved with the [HyperLoot community](https://discord.gg/qEH8PHk) 
 
   </div>
   <div class="block">
 
   ### ![](assets/developers.svg) Developers
-  Take a look at what we’re working on. Join GitHub to learn more.
+  Take a look at what we’re working on. Join [GitHub](https://github.com/HyperLootProtocol) to learn more.
 
   </div>
   <div class="block">
 
   ### ![](assets/miners.svg) Miners
-  Earn HyperLoot tokens by joining the decentralised HyperLoot network (How?)
+  Earn HyperLoot tokens by joining the decentralised [HyperLoot network](https://discord.gg/qEH8PHk) 
 
   </div>
   <div class="block">
 
   ### ![](assets/founders.svg) Foundation
-  If you would like to get involved, or would simply like to support the team, there are handful of options at your disposal. *Contact?
-
+  If you would like to get involved, or would simply like to support the team, there are handful of options at your disposal. 
+  [Contact us!](mailto:alex@hyperloot.com)
+  
   </div>
 </div>
 </section>
