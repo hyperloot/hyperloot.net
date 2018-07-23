@@ -108,7 +108,7 @@ section li {
   height: .3rem;
   background: #f5374311;
   z-index: -1;
-  top: 6rem;
+  bottom: 4rem;
   transform: rotateX(90deg) rotateY(0deg) rotateZ(0deg);
 }
 
@@ -241,7 +241,7 @@ section li {
 
   .solution .layers-3d li,
   .solution li {
-    height: 14rem;
+    height: 20rem;
   }
 
   .details {
