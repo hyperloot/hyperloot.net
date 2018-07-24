@@ -2,7 +2,7 @@
 
   [![](assets/hyperloot-logo.svg)](/)
 
-  # Open source decentralized platform for cross-game digital asset exchange
+  # Decentralized P2P marketplace and ownership solution for in-game items.
 
   [GET WHITELISTED](https://goo.gl/forms/nWaCLnXFqjoZSxn02)
   [WHITEPAPER](https://goo.gl/forms/lvrgRCfZNuyEQlCF2)
