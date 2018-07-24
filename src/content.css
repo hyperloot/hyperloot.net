@@ -46,20 +46,19 @@ section li {
 
 .intro a[href="/"] img {
   display: inline-block;
-  width: 4rem;
+  width: 20rem;
+  user-select: none;
 }
 
 .intro a[href="/"] {
-  color: inherit;
   text-decoration: none;
-  font-size: 3rem;
-  font-weight: normal;
 }
 
 .intro a:not([href="/"]) {
   padding: 1.5rem 3rem;
   border: 1px solid;
   margin-right: 2rem;
+  user-select: none;
 }
 
 

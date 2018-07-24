@@ -1,6 +1,6 @@
 <section class="section intro">
 
-  [![](assets/logo.svg) Hyperloot](/)
+  [![](assets/hyperloot-logo.svg)](/)
 
   # Open source decentralized platform for cross-game digital asset exchange
 
@@ -100,7 +100,7 @@
 
 
   ### ![](assets/newbies.svg) Newbies
-  Learn how to buy, sell and store HLPT tokens, or get involved with the [HyperLoot community](https://discord.gg/qEH8PHk) 
+  Learn how to buy, sell and store HLPT tokens, or get involved with the [HyperLoot community](https://discord.gg/qEH8PHk)
 
   </div>
   <div class="block">
@@ -112,15 +112,15 @@
   <div class="block">
 
   ### ![](assets/miners.svg) Miners
-  Earn HyperLoot tokens by joining the decentralised [HyperLoot network](https://discord.gg/qEH8PHk) 
+  Earn HyperLoot tokens by joining the decentralised [HyperLoot network](https://discord.gg/qEH8PHk)
 
   </div>
   <div class="block">
 
   ### ![](assets/founders.svg) Foundation
-  If you would like to get involved, or would simply like to support the team, there are handful of options at your disposal. 
+  If you would like to get involved, or would simply like to support the team, there are handful of options at your disposal.
   [Contact us!](mailto:alex@hyperloot.com)
-  
+
   </div>
 </div>
 </section>
