@@ -42,6 +42,10 @@ section li {
 .intro {
   min-height: 100vh;
   transform: translateZ(1px);
+  
+  padding-left: 20rem;
+  padding-right: 20rem;
+  max-width: initial;
 }
 
 .intro a[href="/"] img {
@@ -217,6 +221,9 @@ section li {
 @media (max-width: 960px) {
   .intro {
     transform: none;
+    
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .intro h1 {
