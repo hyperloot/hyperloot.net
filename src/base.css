@@ -43,7 +43,7 @@ a {
 }
 
 /* fonts */
-@font-face{
+@font-face {
   font-family: 'Gilroy';
   font-weight: bold;
   src: url('./assets/Gilroy-ExtraBold.otf');
@@ -52,6 +52,12 @@ a {
 @font-face {
   font-family: 'Gilroy';
   src: url('./assets/Gilroy-Light.otf');
+}
+
+@font-face {
+  font-family: 'BebasNeueBold';
+  font-weight: bold;
+  src: url('./assets/BebasNeueBold.otf');
 }
 
 /* */
