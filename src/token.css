@@ -1,0 +1,396 @@
+section p {
+  font-size: 1.4rem;
+}
+
+section h2, h3, h4 {
+  font-family: 'Gilroy';
+}
+
+section .container {
+  max-width: 70.5%;
+  margin: 0 auto;
+}
+
+.token-section {
+  min-height: 100vh;
+  display: flex;
+  background-image: url(assets/token/token_section_bg.png);
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+
+.token-section-content {
+  min-width: 37.5%;
+  margin: 20% 20% 20% 20%;
+}
+
+.token-section h1 {
+  margin-top: 0rem;
+  font-family: 'BebasNeueBold';
+  font-size: 6rem;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.token-section h1 span {
+  color: #f53743;
+}
+
+.token-section p {
+  margin: 3.2rem 0;
+  color: #5c646e;
+  line-height: 1.5;
+}
+
+.token-section .info {
+  display: flex;
+  jutify-content: space-between;
+  font-family: 'Gilroy';
+  font-size: 1.4rem;
+  color: #55606c;
+}
+
+.token-section .info-item {
+  width: 17.5%;
+}
+
+.token-section .info .info-item span {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: #d3d5d9;
+  text-transform: uppercase;
+}
+
+.token-section .info-item.type {
+  margin-left: 5%;
+}
+
+.tokenomics {
+  padding: 10rem  0 12rem 0;
+  background-color: #f5f6f8;
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-image: url(assets/token/tokenomic_bg.png);
+}
+
+.tokenomics h2 {
+  font-size: 3rem;
+  margin-top: 0;
+}
+
+.tokenomics h3 {
+  font-size: 2.4rem;
+  margin-bottom: 4rem;
+}
+
+.tokenomics > p {
+  margin-bottom: 2.4rem;
+  color: #5c646e;
+}
+
+.tokenomics img {
+  width: 100%;
+  height: auto;
+}
+
+.desktop-hidden {
+  display: none;
+}
+
+.token-receive-options {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 7rem;
+}
+
+.token-receive-options .col {
+  width: 47.5%;
+}
+
+.token-receive-options .item:not(:last-of-type){
+  margin-bottom: 3rem;
+}
+
+.token-receive-options .item h3 {
+  margin-top: 0;
+  font-size: 14px;
+  margin-bottom: 1.6rem;
+  font-family: 'Gilroy';
+  text-transform: uppercase;
+  color: #55606c;
+}
+
+.token-receive-options .item p {
+  line-height: 1.5;
+}
+
+.faq-section {
+  padding: 6rem 0rem 12rem 0;
+}
+
+.faq-section h2 {
+  font-family: 'BebasNeueBold';
+  font-size: 6rem;
+  text-transform: uppercase;
+  margin-top: 0rem;
+}
+
+.faq-section h2 span{
+  color: #f53743;
+}
+
+.spoiler .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.spoiler .header h3  {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.spoiler .header .status {
+  height: 3.6rem;
+  width: 3.6rem;
+  background-color: #fff;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.spoiler .header .status {
+  background-image: url(assets/token/arrow.png);
+  transform: rotate(180deg);
+}
+
+.spoiler.is-active .header .status {
+  background-image: url(assets/token/arrow.png);
+  transform: rotate(0deg);
+}
+
+.spoiler {
+  box-sizing: border-box;
+  padding: 3.2rem;
+  margin-bottom: 0.5rem;
+  border-radius: 1.6rem;
+  background-color: #f0f2f5;
+}
+
+.spoiler .content {
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+  max-height: 0;
+  transform: translateY(-20px);
+  transition: max-height 0.25s, opacity 0.25s, transform 0.5s;
+}
+
+.spoiler.is-active .content {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+  max-height: 1200px;
+}
+
+.spoiler .content p {
+  line-height: 1.5;
+  padding-right: 20%;
+}
+
+.button-link {
+  display: block;
+  margin: 6rem auto 0 auto;
+  font-family: 'Gilroy';
+  padding: 1.6rem 10rem;
+  border-radius: 2.3rem;
+  font-size: 1.4rem;
+  text-align: center;
+  width: 12.5%;
+}
+
+.button-link.button-link-red {
+  color: #fff;
+  background-color: #f53743;
+  box-shadow: 0px 6px 14.22px 3.78px rgba(245, 55, 67, 0.22);
+}
+
+@media (max-width: 1440px) {
+
+  section .container {
+    max-width: 72.5%;
+  }
+
+  .token-section {
+    background-size: 47.5%;
+  }
+
+  .token-section-content {
+    min-width: 44.5%;
+    margin: 20% 20% 20% 14.25%;
+  }
+
+  .spoiler .content p {
+    padding-right: 10%;
+  }
+
+}
+
+@media (max-width: 1368px) {
+
+  .token-section {
+    background-size: 42.5%;
+  }
+
+  .token-section-content {
+    min-width: 50%;
+    margin: 15% 20% 20% 14.25%;
+  }
+
+}
+
+@media (max-width: 1024px) {
+
+  .token-section-content {
+    min-width: 70%;
+    margin: 25% 20% 20% 14.25%;
+    background-size: 36.5%;
+  }
+
+  .button-link {
+    width: 17.5%;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  section .container {
+    max-width: 84.5%;
+  }
+
+  .faq-section {
+    padding-bottom: 14rem;
+  }
+
+  .token-section-content {
+    min-width: 85%;
+    margin: auto auto auto auto;
+    background-size: 52.5%;
+  }
+
+}
+
+@media (max-width: 740px) {
+
+  .token-section h1 {
+    font-size: 3.6rem;
+  }
+
+  .token-section-content {
+    margin-top: 45%;
+    min-width: 84.375%;
+    max-width: 84.375%;
+  }
+
+  .token-section {
+    background-size: 45%;
+  }
+
+  .token-section p {
+    padding-right: 20%;
+  }
+
+  .token-section .info {
+    flex-wrap: wrap;
+  }
+
+  .token-section .info .info-item {
+    width: 33%;
+  }
+
+  .token-section .info .info-item:last-of-type {
+    width: 50%;
+  }
+
+  .token-section .info .info-item span {
+    margin-bottom: 0.5rem;
+  }
+
+  .token-section .info .info-item.type {
+    margin-left: 0;
+  }
+
+  .token-section .info .info-item:first-of-type {
+    margin-bottom: 3rem;
+  }
+
+  .tokenomics {
+    padding: 3.6rem 0;
+    background-image: url(assets/token/tokenomic_mobile_bg.png);
+    background-position: left bottom;
+    background-size: cover;
+  }
+
+  .tokenomics h2 {
+    font-size: 2.4rem;
+  }
+
+  .token-receive-options {
+    flex-wrap: wrap;
+  }
+
+  .token-receive-options .col {
+    width: 100%;
+  }
+
+  .token-receive-options {
+    margin-bottom: 2rem;
+  }
+
+  .mobile-hidden  {
+    display: none;
+  }
+
+  .desktop-hidden {
+    display: block;
+  }
+
+  .faq-section {
+    padding-bottom: 2.4rem;
+  }
+
+  .faq-section h2 {
+    margin-bottom: 4rem;
+  }
+
+  .button-link {
+    margin-top: 2.4rem;
+    padding: 1.6rem 0;
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .spoiler {
+    padding: 1.6rem;
+  }
+
+  .spoiler .header .status {
+    min-width: 3.6rem;
+    align-self: flex-start;
+  }
+
+}
+
+@media (max-width: 740px) and ( orientation: landscape ) {
+
+  .token-section {
+    background-size: 35%;
+  }
+
+  .token-section-content {
+    margin-top: 12.5%;
+  }
+
+}
