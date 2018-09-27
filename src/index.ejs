@@ -22,17 +22,17 @@
     <title>Hyperloot</title>
   </head>
   <body>
-    <!-- <header class="header">
-      <a class="logo" href="/"><img src="<%= require('assets/logo.svg') %>"> Hyperloot</a>
-    </header> -->
 
-    <div class="airdrop-banner">
-      <div class="content">
-        Hyperloot AirDrop is started <a target="_blank" href="https://t.me/HyperlootAirdropBot">Claim your HLT Now</a>
-      </div>
-    </div>
+    <%
+      var templates = {
+        about: require('./about.html'),
+        token: require('./token.html')
+      };
 
-    <%= require('content.en.md') %>
+      // 'template' we define in webpack
+
+      print(templates[template]);
+    %>
 
     <section class="join wrapper">
       <h2>Join our community</h2>

@@ -43,17 +43,12 @@ module.exports = {
         options: {
           name: '[name].[ext]?[hash]',
         },
-      }, {
-        test: /\.md$/,
-        use: [
-          {
-            loader: 'html-loader',
-          },
-          {
-            loader: 'markdown-loader',
-            options: {},
-          },
-        ],
+      },{
+        test: /\.(html)$/,
+        use: {
+          loader: 'html-loader',
+          options: {},
+        },
       },
     ],
   },
@@ -78,29 +73,16 @@ module.exports = {
       template: 'src/index.ejs',
       templateParameters: {
         lang: 'en',
+        template: 'about',
+      },
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'token/index.html',
+      template: 'src/index.ejs',
+      templateParameters: {
+        lang: 'en',
+        template: 'token',
       },
     }),
   ],
 };
-
-if (IS_PROD) {
-  module.exports.devtool = '#none';
-  // http://vue-loader.vuejs.org/en/workflow/production.html
-  module.exports.plugins = (module.exports.plugins || []).concat([
-    new webpack.DefinePlugin({
-      'process.env': {
-        NODE_ENV: '"production"',
-      },
-    }),
-    new webpack.optimize.UglifyJsPlugin({
-      sourceMap: true,
-      compress: {
-        warnings: false,
-      },
-    }),
-    new webpack.LoaderOptionsPlugin({
-      minimize: true,
-    }),
-    new ExtractTextPlugin('styles.css'),
-  ]);
-}
