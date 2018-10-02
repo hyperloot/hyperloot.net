@@ -20,10 +20,6 @@ section.promo .content .about {
   color: #55606c;
 }
 
-section.promo .content .about img {
-  margin-left: 1rem;
-}
-
 section.promo .content h1 {
   margin: 0 0 5rem 0;
   font-family: 'BebasNeueBold';
@@ -39,27 +35,8 @@ section.promo .content .links {
   display: flex;
 }
 
-section.promo .content .links a {
-  text-align: center;
-}
-
 section.promo .content .links a:first-of-type {
   margin-right: 1.6rem;
-}
-
-section.promo .content .links .button-link {
-  font-family: 'Gilroy';
-  padding: 1.6rem 4rem;
-  border-radius: 2.3rem;
-  font-size: 1.4rem;
-  background-color: #fff;
-  border: 1px solid #f53743;
-}
-
-section.promo .content .links .button-link.button-link-red {
-  color: #fff;
-  background-color: #f53743;
-  box-shadow: 0px 6px 14.22px 3.78px rgba(245, 55, 67, 0.22);
 }
 
 
@@ -78,19 +55,19 @@ section.features .features-block {
   display: flex;
 }
 
-.features-block .features-item {
+section.features .features-block .features-item {
   color: #55606c;
   width: 23%;
   font-size: 1.4rem;
   line-height: 1.5;
 }
 
-.features-block .features-item:first-of-type {
+section.features .features-block .features-item:first-of-type {
   position: relative;
   margin-left: 4.8rem;
 }
 
-.features-block .features-item:first-of-type:before {
+section.features .features-block .features-item:first-of-type:before {
   content: '';
   position: absolute;
   top: 6.4rem;
@@ -101,11 +78,11 @@ section.features .features-block {
   border-radius: 50%;
 }
 
-.features-block .features-item:not(:last-of-type) {
+section.features .features-block .features-item:not(:last-of-type) {
   margin-right: 2.5%;
 }
 
-.features-block .features-item .icon {
+section.features .features-block .features-item .icon {
   min-height: 4.2rem;
   margin-bottom: 1.6rem;
   background-repeat: no-repeat;
@@ -136,7 +113,7 @@ section.features .features-block {
   font-size: 1.4rem;
 }
 
-.features-block .features-item p {
+section.features .features-block .features-item p {
   width: 91%;
 }
 
@@ -513,14 +490,16 @@ section.get-started:after {
     padding-bottom: 3.2rem;
   }
 
-  .features-block .features-item {
+  section.features .features-block .features-item {
     width: 100%;
     margin-bottom: 3.2rem;
   }
 
-  .features-block .features-item:first-of-type {
+  section.features .features-block .features-item:first-of-type {
     padding-bottom: 0;
-    margin-bottom: 3.2;
+    margin-bottom: 3.2rem;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .features-block .features-item p {
