@@ -151,6 +151,7 @@ section.faq h2 span{
   border-radius: 50%;
   background-position: center;
   background-repeat: no-repeat;
+  pointer-events: none;
 }
 
 .spoiler .header .status {
@@ -203,11 +204,9 @@ section.faq h2 span{
 section.faq .button-link {
   display: block;
   margin: 6rem auto 0 auto;
-  font-family: 'Gilroy';
   padding: 1.6rem 10rem;
   border-radius: 2.3rem;
   font-size: 1.4rem;
-  text-align: center;
   width: 12.5%;
 }
 
@@ -367,6 +366,11 @@ section.faq .button-link {
   .spoiler .header .status {
     min-width: 3.6rem;
     align-self: flex-start;
+  }
+
+  .spoiler .header h4 {
+    font-size: 1.6rem;
+    line-height: 1.5;
   }
 
 }
