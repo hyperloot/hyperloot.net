@@ -96,6 +96,9 @@ a {
 @import './content.css';
 
 /* */
+@import './buttons.css';
+
+/* */
 @import './about.css';
 @import './token.css';
 
@@ -127,6 +130,11 @@ a {
 
   .page-wrapper .mobile-show {
     display: inline-block;
+  }
+
+  .join {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
   }
 
 }
