@@ -76,7 +76,8 @@ a {
   margin: 0 auto;
 }
 
-.page-wrapper section h2, h3 {
+.page-wrapper section h2,
+.page-wrapper section h3 {
   font-family: 'Gilroy';
 }
 

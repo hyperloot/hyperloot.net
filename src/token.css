@@ -353,7 +353,7 @@ section.faq .button-link {
     margin-bottom: 4rem;
   }
 
-  .button-link {
+  section.faq .button-link {
     margin-top: 2.4rem;
     padding: 1.6rem 0;
     box-sizing: border-box;
