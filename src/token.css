@@ -1,17 +1,4 @@
-section p {
-  font-size: 1.4rem;
-}
-
-section h2, h3, h4 {
-  font-family: 'Gilroy';
-}
-
-section .container {
-  max-width: 70.5%;
-  margin: 0 auto;
-}
-
-.token-section {
+section.token {
   min-height: 100vh;
   display: flex;
   background-image: url(assets/token/token_section_bg.png);
@@ -19,12 +6,12 @@ section .container {
   background-repeat: no-repeat;
 }
 
-.token-section-content {
+section.token .content {
   min-width: 37.5%;
   margin: 20% 20% 20% 20%;
 }
 
-.token-section h1 {
+section.token h1 {
   margin-top: 0rem;
   font-family: 'BebasNeueBold';
   font-size: 6rem;
@@ -32,17 +19,17 @@ section .container {
   color: #000;
 }
 
-.token-section h1 span {
+section.token h1 span {
   color: #f53743;
 }
 
-.token-section p {
+section.token p {
   margin: 3.2rem 0;
   color: #5c646e;
   line-height: 1.5;
 }
 
-.token-section .info {
+section.token .info {
   display: flex;
   jutify-content: space-between;
   font-family: 'Gilroy';
@@ -50,22 +37,22 @@ section .container {
   color: #55606c;
 }
 
-.token-section .info-item {
+section.token .info .info-item {
   width: 17.5%;
 }
 
-.token-section .info .info-item span {
+section.token .info .info-item span {
   display: inline-block;
   margin-bottom: 1rem;
   color: #d3d5d9;
   text-transform: uppercase;
 }
 
-.token-section .info-item.type {
+section.token .info .info-item.type {
   margin-left: 5%;
 }
 
-.tokenomics {
+section.tokenomics {
   padding: 10rem  0 12rem 0;
   background-color: #f5f6f8;
   background-position: left bottom;
@@ -73,22 +60,23 @@ section .container {
   background-image: url(assets/token/tokenomic_bg.png);
 }
 
-.tokenomics h2 {
+section.tokenomics h2 {
   font-size: 3rem;
   margin-top: 0;
 }
 
-.tokenomics h3 {
+section.tokenomics h3 {
   font-size: 2.4rem;
   margin-bottom: 4rem;
 }
 
-.tokenomics > p {
+section.tokenomics .container > p {
+  margin-top: 1.8rem;
   margin-bottom: 2.4rem;
   color: #5c646e;
 }
 
-.tokenomics img {
+section.tokenomics img {
   width: 100%;
   height: auto;
 }
@@ -124,31 +112,36 @@ section .container {
   line-height: 1.5;
 }
 
-.faq-section {
-  padding: 6rem 0rem 12rem 0;
+section.faq {
+  padding: 6rem 0rem 0rem 0;
 }
 
-.faq-section h2 {
+.page-wrapper section.faq h2 {
   font-family: 'BebasNeueBold';
   font-size: 6rem;
   text-transform: uppercase;
   margin-top: 0rem;
+  margin-bottom: 4.8rem;
 }
 
-.faq-section h2 span{
+section.faq h2 span{
   color: #f53743;
 }
 
 .spoiler .header {
+  position: relative;
+  z-index: 10;
   display: flex;
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
 }
 
-.spoiler .header h3  {
+.spoiler .header h4  {
   margin: 0;
+  font-family: 'Gilroy-Medium';
   font-size: 2rem;
+  pointer-events: none;
 }
 
 .spoiler .header .status {
@@ -199,7 +192,15 @@ section .container {
   padding-right: 20%;
 }
 
-.button-link {
+.spoiler .content p:first-of-type {
+  margin-top: 1.2rem;
+}
+
+.spoiler .content p:not(:last-of-type){
+  margin-bottom: 1.2rem;
+}
+
+section.faq .button-link {
   display: block;
   margin: 6rem auto 0 auto;
   font-family: 'Gilroy';
@@ -210,23 +211,13 @@ section .container {
   width: 12.5%;
 }
 
-.button-link.button-link-red {
-  color: #fff;
-  background-color: #f53743;
-  box-shadow: 0px 6px 14.22px 3.78px rgba(245, 55, 67, 0.22);
-}
-
 @media (max-width: 1440px) {
 
-  section .container {
-    max-width: 72.5%;
-  }
-
-  .token-section {
+  section.token {
     background-size: 47.5%;
   }
 
-  .token-section-content {
+  section.token .content {
     min-width: 44.5%;
     margin: 20% 20% 20% 14.25%;
   }
@@ -239,20 +230,20 @@ section .container {
 
 @media (max-width: 1368px) {
 
-  .token-section {
+  section.token {
     background-size: 42.5%;
   }
 
-  .token-section-content {
+  section.token .content {
     min-width: 50%;
-    margin: 15% 20% 20% 14.25%;
+    margin: 15% 20% 20% 11.5%;
   }
 
 }
 
 @media (max-width: 1024px) {
 
-  .token-section-content {
+  section.token .content {
     min-width: 70%;
     margin: 25% 20% 20% 14.25%;
     background-size: 36.5%;
@@ -270,83 +261,80 @@ section .container {
     max-width: 84.5%;
   }
 
-  .faq-section {
-    padding-bottom: 14rem;
-  }
-
-  .token-section-content {
+  section.token .content {
     min-width: 85%;
     margin: auto auto auto auto;
     background-size: 52.5%;
+  }
+
+  section.faq {
+    padding-bottom: 14rem;
   }
 
 }
 
 @media (max-width: 740px) {
 
-  .token-section h1 {
-    font-size: 3.6rem;
+  section.token {
+    background-size: 45%;
   }
 
-  .token-section-content {
+  section.token .content {
     margin-top: 45%;
     min-width: 84.375%;
     max-width: 84.375%;
   }
 
-  .token-section {
-    background-size: 45%;
+  section.token h1 {
+    font-size: 3.6rem;
   }
 
-  .token-section p {
+  section.token p {
     padding-right: 20%;
   }
 
-  .token-section .info {
+  section.token .info {
     flex-wrap: wrap;
   }
 
-  .token-section .info .info-item {
+  section.token .info .info-item {
     width: 33%;
   }
 
-  .token-section .info .info-item:last-of-type {
+  section.token .info .info-item:last-of-type {
     width: 50%;
   }
 
-  .token-section .info .info-item span {
+  section.token .info .info-item span {
     margin-bottom: 0.5rem;
   }
 
-  .token-section .info .info-item.type {
+  section.token .info .info-item.type {
     margin-left: 0;
   }
 
-  .token-section .info .info-item:first-of-type {
+  section.token .info .info-item:first-of-type {
     margin-bottom: 3rem;
   }
 
-  .tokenomics {
+  section.tokenomics {
     padding: 3.6rem 0;
     background-image: url(assets/token/tokenomic_mobile_bg.png);
     background-position: left bottom;
     background-size: cover;
   }
 
-  .tokenomics h2 {
+  section.tokenomics h2 {
     font-size: 2.4rem;
   }
 
   .token-receive-options {
     flex-wrap: wrap;
+    margin-bottom: 2rem;
   }
 
   .token-receive-options .col {
     width: 100%;
-  }
-
-  .token-receive-options {
-    margin-bottom: 2rem;
   }
 
   .mobile-hidden  {
@@ -357,11 +345,11 @@ section .container {
     display: block;
   }
 
-  .faq-section {
+  section.faq {
     padding-bottom: 2.4rem;
   }
 
-  .faq-section h2 {
+  section.faq h2 {
     margin-bottom: 4rem;
   }
 
@@ -385,11 +373,11 @@ section .container {
 
 @media (max-width: 740px) and ( orientation: landscape ) {
 
-  .token-section {
+  section.token {
     background-size: 35%;
   }
 
-  .token-section-content {
+  section.token .content {
     margin-top: 12.5%;
   }
 
