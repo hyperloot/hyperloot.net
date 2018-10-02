@@ -1,5 +1,5 @@
 const path = require('path');
-const webpack = require('webpack');
+//const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
@@ -43,7 +43,7 @@ module.exports = {
         options: {
           name: '[name].[ext]?[hash]',
         },
-      },{
+      }, {
         test: /\.(html)$/,
         use: {
           loader: 'html-loader',
