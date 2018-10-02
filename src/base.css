@@ -42,6 +42,29 @@ a {
   box-sizing: border-box;
 }
 
+/* fonts */
+@font-face {
+  font-family: 'Gilroy';
+  font-weight: bold;
+  src: url('./assets/Gilroy-ExtraBold.otf');
+}
+
+@font-face {
+  font-family: 'Gilroy-Medium';
+  src: url('./assets/Gilroy-Medium.otf');
+}
+
+@font-face {
+  font-family: 'Gilroy-Light';
+  src: url('./assets/Gilroy-Light.otf');
+}
+
+@font-face {
+  font-family: 'BebasNeueBold';
+  font-weight: bold;
+  src: url('./assets/BebasNeueBold.otf');
+}
+
 /* common styles */
 .page-wrapper {
   position: relative;
@@ -53,33 +76,19 @@ a {
   margin: 0 auto;
 }
 
-.page-wrapper section h2 {
-  margin: 0;
-  font-family: 'Gilroy';
-  font-size: 3rem;
-  color: #000;
-}
-
-.page-wrapper section h3 {
+.page-wrapper section h2, h3 {
   font-family: 'Gilroy';
 }
 
-/* fonts */
-@font-face {
-  font-family: 'Gilroy';
-  font-weight: bold;
-  src: url('./assets/Gilroy-ExtraBold.otf');
+.page-wrapper section p {
+  font-family: 'Gilroy-Medium';
+  font-size: 1.4rem;
 }
 
-@font-face {
-  font-family: 'Gilroy';
-  src: url('./assets/Gilroy-Light.otf');
-}
-
-@font-face {
-  font-family: 'BebasNeueBold';
-  font-weight: bold;
-  src: url('./assets/BebasNeueBold.otf');
+.button-link.button-link-red {
+  color: #fff;
+  background-color: #f53743;
+  box-shadow: 0px 6px 14.22px 3.78px rgba(245, 55, 67, 0.22);
 }
 
 /* */
