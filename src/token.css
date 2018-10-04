@@ -1,14 +1,15 @@
 section.token {
   min-height: 100vh;
   display: flex;
+  background-size: 30%;
   background-image: url(assets/token/token_section_bg.svg);
   background-position: top right;
   background-repeat: no-repeat;
 }
 
 section.token .content {
-  min-width: 37.5%;
-  margin: 20% 20% 20% 20%;
+  max-width: 32.5%;
+  margin: 7.5% 20% 15% 20%;
 }
 
 section.token h1 {
@@ -23,14 +24,16 @@ section.token h1 span {
   color: #f53743;
 }
 
-section.token p {
+.page-wrapper section.token p {
   margin: 3.2rem 0;
+  font-size: 1.6rem;
   color: #5c646e;
   line-height: 1.5;
 }
 
 section.token .info {
   display: flex;
+  flex-wrap: wrap;
   jutify-content: space-between;
   font-family: 'Gilroy';
   font-size: 1.4rem;
@@ -38,18 +41,38 @@ section.token .info {
 }
 
 section.token .info .info-item {
-  width: 17.5%;
+  position: relative;
+  display: flex;
+  width: 100%;
+  font-family: 'Gilroy';
 }
 
-section.token .info .info-item span {
-  display: inline-block;
-  margin-bottom: 1rem;
-  color: #d3d5d9;
-  text-transform: uppercase;
+section.token .info .info-item .number {
+  font-family: 'BebasNeueBold';
+  font-size: 2.4rem;
+  color: #c9cdd4;
+  margin-right: 2.4rem;
+  line-height: 1;
 }
 
-section.token .info .info-item.type {
-  margin-left: 5%;
+section.token .info .info-item .number span {
+  color: #f53743;
+}
+
+section.token .info .info-item:not(:last-of-type){
+  margin-bottom: 2.4rem;
+}
+
+section.token .info .info-item h4 {
+  margin-bottom: 0.8rem;
+  margin-top: 0;
+  color: #000;
+  font-size: 1.8rem;
+}
+
+section.token .info .info-item p {
+  margin: 0;
+  font-size: 1.6rem;
 }
 
 section.tokenomics {
@@ -212,12 +235,12 @@ section.faq .button-link {
 @media (max-width: 1440px) {
 
   section.token {
-    background-size: 47.5%;
+    background-size: 35%;
   }
 
   section.token .content {
     min-width: 44.5%;
-    margin: 20% 20% 20% 14.25%;
+    margin: 5% 20% 7.5% 14.25%;
   }
 
   .spoiler .content p {
@@ -229,12 +252,20 @@ section.faq .button-link {
 @media (max-width: 1368px) {
 
   section.token {
-    background-size: 42.5%;
+    background-size: 25.5%;
+  }
+
+  section.token h1 {
+    margin-bottom: 3.2rem;
+  }
+
+  section.token p {
+    margin: 2.4rem 0;
   }
 
   section.token .content {
     min-width: 50%;
-    margin: 15% 20% 20% 11.5%;
+    margin: 3.5% 20% 7.5% 11.5%;
   }
 
 }
@@ -273,12 +304,8 @@ section.faq .button-link {
 
 @media (max-width: 740px) {
 
-  section.token {
-    background-size: 45%;
-  }
-
   section.token .content {
-    margin-top: 45%;
+    margin-top: 20%;
     min-width: 84.375%;
     max-width: 84.375%;
   }
@@ -287,32 +314,8 @@ section.faq .button-link {
     font-size: 3.6rem;
   }
 
-  section.token p {
-    padding-right: 20%;
-  }
-
   section.token .info {
-    flex-wrap: wrap;
-  }
-
-  section.token .info .info-item {
-    width: 33%;
-  }
-
-  section.token .info .info-item:last-of-type {
-    width: 50%;
-  }
-
-  section.token .info .info-item span {
-    margin-bottom: 0.5rem;
-  }
-
-  section.token .info .info-item.type {
-    margin-left: 0;
-  }
-
-  section.token .info .info-item:first-of-type {
-    margin-bottom: 3rem;
+    padding-bottom: 4rem;
   }
 
   section.tokenomics {
@@ -334,6 +337,10 @@ section.faq .button-link {
     width: 100%;
   }
 
+  .token-receive-options .col:first-of-type {
+    margin-bottom: 2.4rem;
+  }
+
   .mobile-hidden  {
     display: none;
   }
@@ -343,11 +350,16 @@ section.faq .button-link {
   }
 
   section.faq {
+    padding-top: 3.2rem;
     padding-bottom: 2.4rem;
   }
 
   section.faq h2 {
     margin-bottom: 4rem;
+  }
+
+  .page-wrapper section.faq h2 {
+    margin-bottom: 2.8rem;
   }
 
   section.faq .button-link {
