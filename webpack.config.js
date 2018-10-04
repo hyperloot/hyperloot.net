@@ -1,5 +1,5 @@
 const path = require('path');
-//const webpack = require('webpack');
+// const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
@@ -7,7 +7,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const IS_PROD = process.env.NODE_ENV === 'production';
 
-module.exports = {
+const config = {
   entry: './src/main.js',
   output: {
     path: path.resolve(__dirname, './dist'),
@@ -86,3 +86,11 @@ module.exports = {
     }),
   ],
 };
+
+if (IS_PROD) {
+  config.plugins.push(
+    new ExtractTextPlugin('bundle.css'),
+  );
+}
+
+module.exports = config;
