@@ -503,7 +503,7 @@ section li {
 section.promo {
   display: flex;
   min-height: 100vh;
-  background-image: url(/promo_section_bg.jpg?e751c74f39192c25308494b018ed98d2);
+  background-image: url(/promo_section_bg.svg?86c9a70f82daea42fdd85bda8d8a9ccc);
   background-position: top right;
   background-repeat: no-repeat;
 }
@@ -594,19 +594,19 @@ section.features .features-block .features-item .icon {
 
 .features-block .features-item .icon.blockchain {
   min-height: 4.6rem;
-  background-image: url(/icon_ethereum.svg?1051b39657286375358119e732c6c7de)
+  background-image: url(/icon_ethereum.svg?0da69545eea4c4105938b504979c5e05)
 }
 
 .features-block .features-item .icon.marketplace {
-  background-image: url(/icon_wallet.svg?0bebd67304017a013a17139a4738f423)
+  background-image: url(/icon_wallet.svg?9e73be2583a34254fb706658f1136547)
 }
 
 .features-block .features-item .icon.protocol {
-  background-image: url(/icon_console.svg?c753288eeaf20eddf4b27c4210ca0eec)
+  background-image: url(/icon_console.svg?8e0f33cc5f9d4f330a63443bfbde8525)
 }
 
 .features-block .features-item .icon.games {
-  background-image: url(/icon_joystick.svg?6ba8f1cbbae47a968280ea52dfc9ee64)
+  background-image: url(/icon_joystick.svg?678e3d4b2786bb61df56838d27e1d485)
 }
 
 .features-block .features-item h3 {
@@ -683,7 +683,7 @@ section.opportunities {
   color: #fff;
   border-radius: 1.5rem 0 0 1.5rem;
   border-right: 0.35rem solid #fff;
-  background-image: url(/joystick_bg.svg?f2612a0069086d2d841ef72234ff682e);
+  background-image: url(/joystick_bg.svg?dc43fbbaca8df741a444898e8dd684e3);
 }
 
 .developers-block .gamers:after {
@@ -708,7 +708,7 @@ section.opportunities {
   color: #000;
   border-radius: 0 1.5rem 1.5rem 0;
   border-left: 0.35rem solid #fff;
-  background-image: url(/thinking_bg.svg?cf28fd0d6f52cf3a186b13b306c8695a);
+  background-image: url(/thinking_bg.svg?62e7a1a1b53b3561e5c7150f449bcf77);
 }
 
 .developers-block h4 {
@@ -738,7 +738,7 @@ section.get-started:after {
   bottom: -20rem;
   height: 40rem;
   width: 21rem;
-  background-image: url(/roshan_bg.png?b76e2bbfd3dd9f50680560eecd448a9b);
+  background-image: url(/roshan_bg.svg?5ca37c2303c82820fb8837d9a47f758b);
   background-repeat: no-repeat;
 }
 
@@ -768,19 +768,19 @@ section.get-started:after {
 }
 
 .roles-block .item .icon.newbies {
-  background-image: url(/icon_newbie.png?d948daaffd08b109298d375ef523fc34);
+  background-image: url(/icon_newbie.svg?51ab7bccda7efd2387cb763f6b39208b);
 }
 
 .roles-block .item .icon.developers {
-  background-image: url(/icon_developer.png?75a8a74745f091e1059a56aef3fe9b10);
+  background-image: url(/icon_developer.svg?5544f934d60ecc3601e70c97b29d5dbd);
 }
 
 .roles-block .item .icon.miners {
-  background-image: url(/icon_miners.png?6e05757ffba885bb0748f048ac604ee0);
+  background-image: url(/icon_miners.svg?d0c9640d3056f840624f58cfbcc2a722);
 }
 
 .roles-block .item .icon.foundation {
-  background-image: url(/icon_foundation.png?ff7391794bbbde4623930309eecb2e71);
+  background-image: url(/icon_foundation.svg?67d30fdfb43743e30c702572a7ab26f5);
 }
 
 .roles-block .item h4 {
@@ -951,7 +951,7 @@ section.get-started:after {
     margin: auto 0;
     padding: 0 7.5%;
     background-size: 50%;
-    background-image: url(/promo_section_mobile_bg.png?4dfc77cb92089c9fc929c8eef4b5ac80);
+    background-image: url(/promo_section_mobile_bg.svg?0acd3687978e555e07fbb7e4c819aa19);
   }
 
   section.promo .content {
@@ -1096,7 +1096,7 @@ section.get-started:after {
 section.token {
   min-height: 100vh;
   display: flex;
-  background-image: url(/token_section_bg.png?749769c788321cc814b3ad5e67927edc);
+  background-image: url(/token_section_bg.svg?ca37bab3da40ed686a635edd1fce6ada);
   background-position: top right;
   background-repeat: no-repeat;
 }
@@ -1148,7 +1148,7 @@ section.token .info .info-item.type {
 }
 
 section.tokenomics {
-  padding: 10rem  0 12rem 0;
+  padding: 10rem  0;
   background-color: #f5f6f8;
   background-position: left bottom;
   background-repeat: no-repeat;
@@ -1183,7 +1183,6 @@ section.tokenomics img {
 .token-receive-options {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 7rem;
 }
 
 .token-receive-options .col {
@@ -1250,12 +1249,12 @@ section.faq h2 span{
 }
 
 .spoiler .header .status {
-  background-image: url(/arrow.png?8c3af30991a6abff5b151a3491dadd5e);
+  background-image: url(/arrow.svg?e1feeed5084a6bc3183f16fa40553653);
+  background-size: 50%;
   transform: rotate(180deg);
 }
 
 .spoiler.is-active .header .status {
-  background-image: url(/arrow.png?8c3af30991a6abff5b151a3491dadd5e);
   transform: rotate(0deg);
 }
 
@@ -1424,7 +1423,6 @@ section.faq .button-link {
 
   .token-receive-options {
     flex-wrap: wrap;
-    margin-bottom: 2rem;
   }
 
   .token-receive-options .col {
