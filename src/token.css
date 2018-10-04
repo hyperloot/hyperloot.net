@@ -1,7 +1,7 @@
 section.token {
   min-height: 100vh;
   display: flex;
-  background-image: url(assets/token/token_section_bg.png);
+  background-image: url(assets/token/token_section_bg.svg);
   background-position: top right;
   background-repeat: no-repeat;
 }
@@ -53,7 +53,7 @@ section.token .info .info-item.type {
 }
 
 section.tokenomics {
-  padding: 10rem  0 12rem 0;
+  padding: 10rem  0;
   background-color: #f5f6f8;
   background-position: left bottom;
   background-repeat: no-repeat;
@@ -88,7 +88,6 @@ section.tokenomics img {
 .token-receive-options {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 7rem;
 }
 
 .token-receive-options .col {
@@ -155,12 +154,12 @@ section.faq h2 span{
 }
 
 .spoiler .header .status {
-  background-image: url(assets/token/arrow.png);
+  background-image: url(assets/token/arrow.svg);
+  background-size: 50%;
   transform: rotate(180deg);
 }
 
 .spoiler.is-active .header .status {
-  background-image: url(assets/token/arrow.png);
   transform: rotate(0deg);
 }
 
@@ -329,7 +328,6 @@ section.faq .button-link {
 
   .token-receive-options {
     flex-wrap: wrap;
-    margin-bottom: 2rem;
   }
 
   .token-receive-options .col {

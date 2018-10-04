@@ -1,7 +1,7 @@
 section.promo {
   display: flex;
   min-height: 100vh;
-  background-image: url(assets/about/promo_section_bg.jpg);
+  background-image: url(assets/about/promo_section_bg.svg);
   background-position: top right;
   background-repeat: no-repeat;
 }
@@ -236,7 +236,7 @@ section.get-started:after {
   bottom: -20rem;
   height: 40rem;
   width: 21rem;
-  background-image: url(assets/about/roshan_bg.png);
+  background-image: url(assets/about/roshan_bg.svg);
   background-repeat: no-repeat;
 }
 
@@ -266,19 +266,19 @@ section.get-started:after {
 }
 
 .roles-block .item .icon.newbies {
-  background-image: url(assets/about/icon_newbie.png);
+  background-image: url(assets/about/icon_newbie.svg);
 }
 
 .roles-block .item .icon.developers {
-  background-image: url(assets/about/icon_developer.png);
+  background-image: url(assets/about/icon_developer.svg);
 }
 
 .roles-block .item .icon.miners {
-  background-image: url(assets/about/icon_miners.png);
+  background-image: url(assets/about/icon_miners.svg);
 }
 
 .roles-block .item .icon.foundation {
-  background-image: url(assets/about/icon_foundation.png);
+  background-image: url(assets/about/icon_foundation.svg);
 }
 
 .roles-block .item h4 {
@@ -449,7 +449,7 @@ section.get-started:after {
     margin: auto 0;
     padding: 0 7.5%;
     background-size: 50%;
-    background-image: url(assets/about/promo_section_mobile_bg.png);
+    background-image: url(assets/about/promo_section_mobile_bg.svg);
   }
 
   section.promo .content {
