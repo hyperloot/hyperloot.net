@@ -1,22 +1,40 @@
 @import '../~normalize.css';
+@import './fonts.css';
+
+:root {
+  --font-family-title: 'BebasNeueBold';
+  --font-family-regular-bold: 'Gilroy';
+  --font-family-regular-medium: 'Gilroy-Medium';
+  --font-family-regular-light: 'Gilroy-Light';
+
+  --accent-color: #f53743;
+  --white-color: #fff;
+  --black-color: #0e1213;
+  --grey-color: #55606c;
+  --light-grey-color: #e5e5e5;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  transition-property: none;
+  transition-duration: 0.3s;
+}
 
 html {
   font-size: 10px;
-  font-family: 'Gilroy', 'sans-serif';
-  overflow-y: scroll;
-  background: #fff;
-  color: #222;
-
-  overflow: hidden;
+  font-family: var(--font-family-regular-medium);
 }
 
 body {
-  perspective: 5px;
-  transform-style: preserve-3d;
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: scroll;
+  min-height: 100vh;
   scroll-behavior: smooth;
+}
+
+::selection {
+  color: var(--white-color);
+  background: var(--accent-color);
 }
 
 b, strong, a, h1, h2 {
@@ -28,109 +46,15 @@ a {
   text-decoration: none;
 }
 
-::selection {
-  color: white;
-  background: #f53743;
-}
-
-.wrapper {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 94rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  box-sizing: border-box;
-}
-
-/* fonts */
-@font-face {
-  font-family: 'Gilroy';
-  font-weight: bold;
-  src: url('./assets/Gilroy-ExtraBold.otf');
-}
-
-@font-face {
-  font-family: 'Gilroy-Medium';
-  src: url('./assets/Gilroy-Medium.otf');
-}
-
-@font-face {
-  font-family: 'Gilroy-Light';
-  src: url('./assets/Gilroy-Light.otf');
-}
-
-@font-face {
-  font-family: 'BebasNeueBold';
-  font-weight: bold;
-  src: url('./assets/BebasNeueBold.otf');
-}
-
-/* common styles */
-.page-wrapper {
-  position: relative;
-  z-index: 2;
-}
-
-.container {
-  max-width: 77.5%;
-  margin: 0 auto;
-}
-
-.page-wrapper section h2,
-.page-wrapper section h3 {
-  font-family: 'Gilroy';
-}
-
-.page-wrapper section p {
-  font-family: 'Gilroy-Medium';
-  font-size: 1.4rem;
-}
-
-.button-link.button-link-red {
-  color: #fff;
-  background-color: #f53743;
-  box-shadow: 0px 6px 14.22px 3.78px rgba(245, 55, 67, 0.22);
-}
-
+/***** Common styles *****/
+@import './common.css';
 @import './content.css';
 
+/***** Components *****/
 @import './buttons.css';
+@import './footer.css';
+@import './sidebar.css';
 
+/***** Pages *****/
 @import './about.css';
 @import './token.css';
-
-@import './footer.css';
-
-@media (max-width: 768px) {
-
-  .wrapper {
-    padding-top: 5.6rem;
-    padding-bottom: 9rem;
-  }
-
-}
-
-@media (max-width: 740px) {
-
-  .wrapper {
-    padding-bottom: 0;
-  }
-
-  section .container {
-    max-width: 85%;
-  }
-
-  .page-wrapper section h2 {
-    font-size: 2.4rem;
-  }
-
-  .page-wrapper .mobile-show {
-    display: inline-block;
-  }
-
-  .join {
-    padding-top: 8rem;
-    padding-bottom: 8rem;
-  }
-
-}

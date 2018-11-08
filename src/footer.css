@@ -7,12 +7,12 @@
   margin-bottom: 2rem;
 }
 
-.social {
+.join .social {
   display: flex;
   flex-wrap: wrap;
 }
 
-.social a {
+.join .social a {
   background: #f53743;
   width: 4rem;
   height: 4rem;
