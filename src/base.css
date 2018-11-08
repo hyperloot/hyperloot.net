@@ -92,17 +92,13 @@ a {
   box-shadow: 0px 6px 14.22px 3.78px rgba(245, 55, 67, 0.22);
 }
 
-/* */
 @import './content.css';
 
-/* */
 @import './buttons.css';
 
-/* */
 @import './about.css';
 @import './token.css';
 
-/* */
 @import './footer.css';
 
 @media (max-width: 768px) {

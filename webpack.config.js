@@ -84,6 +84,14 @@ const config = {
         template: 'token',
       },
     }),
+    new HtmlWebpackPlugin({
+      filename: 'index.html',
+      template: 'src/index.ejs',
+      templateParameters: {
+        lang: 'en',
+        template: 'solutions',
+      },
+    }),
   ],
 };
 
