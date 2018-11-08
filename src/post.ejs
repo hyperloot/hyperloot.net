@@ -19,27 +19,15 @@
     <meta property = "og:url" content = "https://hyperloot.net" />
     <meta property = "og:image" content = "https://hyperloot.net/Hyperchan.png" />
 
-    <title>Hyperloot</title>
+    <title><%= attributes.title %></title>
   </head>
   <body>
 
-    <%
-      var templates = {
-        about: require('./about.html'),
-        token: require('./token.html'),
-      };
+    <%= attributes.title %>
+    <%= attributes.date %>
+    <%= attributes.author %>
 
-      // 'template' we define in webpack
-
-      print(templates[template]);
-    %>
-
-    <% postsData.forEach(function(post){ %>
-      <div>
-        <%= post.attributes.title %>
-        <%= post.short %>
-      </div>
-    <% }); %>
+    <%= content %>
 
     <%= require('./_footer.html') %>
 

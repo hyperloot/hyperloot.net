@@ -101,6 +101,8 @@ a {
 /* */
 @import './about.css';
 @import './token.css';
+@import './post.css';
+@import './posts.css';
 
 /* */
 @import './footer.css';

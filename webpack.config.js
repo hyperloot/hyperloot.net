@@ -1,5 +1,8 @@
 const path = require('path');
+const fs = require('fs');
 // const webpack = require('webpack');
+const fm = require('front-matter');
+const marked = require('marked');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
@@ -7,6 +10,22 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const IS_PROD = process.env.NODE_ENV === 'production';
 
+// POST GENERATION SECTION
+const posts = fs.readdirSync('./posts/');
+const postsData = posts
+  .map(post => ({
+    ...fm(fs.readFileSync(`./posts/${post}`, 'utf8')),
+    filename: post.split('.')[0],
+    template: 'post',
+    lang: 'en',
+  }))
+  .map(post => ({
+    ...post,
+    content: marked(post.body),
+    short: marked(post.body.split('\n', 3).join('\n')),
+  }));
+
+// CONFIG
 const config = {
   entry: './src/main.js',
   output: {
@@ -47,7 +66,9 @@ const config = {
         test: /\.(html)$/,
         use: {
           loader: 'html-loader',
-          options: {},
+          options: {
+            interpolate: true,
+          },
         },
       },
     ],
@@ -74,6 +95,7 @@ const config = {
       templateParameters: {
         lang: 'en',
         template: 'about',
+        postsData,
       },
     }),
     new HtmlWebpackPlugin({
@@ -82,8 +104,23 @@ const config = {
       templateParameters: {
         lang: 'en',
         template: 'token',
+        postsData,
       },
     }),
+    new HtmlWebpackPlugin({
+      filename: 'posts/index.html',
+      template: 'src/posts.ejs',
+      templateParameters: {
+        lang: 'en',
+        template: 'posts',
+        postsData,
+      },
+    }),
+    ...postsData.map(post => new HtmlWebpackPlugin({
+      filename: `posts/${post.filename}/index.html`,
+      template: 'src/post.ejs',
+      templateParameters: post,
+    })),
   ],
 };
 
