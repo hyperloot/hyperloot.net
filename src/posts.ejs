@@ -18,10 +18,10 @@
   <body>
 
     <% postsData.forEach(function(post){ %>
-      <div>
+      <a href="/posts/<%= post.filename %>">
         <%= post.attributes.title %>
         <%= post.short %>
-      </div>
+      </a>
     <% }); %>
 
     <%= require('./_footer.html') %>
