@@ -108,20 +108,21 @@ const config = {
       },
     }),
     new HtmlWebpackPlugin({
+      filename: 'solutions/index.html',
+      template: 'src/index.ejs',
+      templateParameters: {
+        lang: 'en',
+        template: 'solutions',
+        postsData,
+      },
+    }),
+    new HtmlWebpackPlugin({
       filename: 'posts/index.html',
       template: 'src/posts.ejs',
       templateParameters: {
         lang: 'en',
         template: 'posts',
         postsData,
-      },
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'index.html',
-      template: 'src/index.ejs',
-      templateParameters: {
-        lang: 'en',
-        template: 'solutions',
       },
     }),
     ...postsData.map(post => new HtmlWebpackPlugin({
