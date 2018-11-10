@@ -8,6 +8,17 @@
   margin: 0 auto;
 }
 
+.section-heading {
+  color: var(--black-color);
+  font-family: var(--font-family-title);
+  font-size: 6rem;
+  text-transform: uppercase;
+}
+
+.section-heading span {
+  color: var(--accent-color);
+}
+
 .page-wrapper section h2,
 .page-wrapper section h3 {
   font-family: 'Gilroy';

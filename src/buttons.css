@@ -3,7 +3,7 @@
   border: 1px solid #f53743;
   border-radius: 2.3rem;
   background-color: #fff;
-  font-family: 'Gilroy';
+  font-family: var(--font-family-regular-medium);
   font-size: 1.4rem;
   text-align: center;
 }
