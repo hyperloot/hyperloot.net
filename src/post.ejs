@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="<%= lang %>">
+  <head>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#fff">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125551451-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-125551451-1');
+    </script>
+
+    <meta property = "og:title" content = "HyperLoot" />
+    <meta property = "og:description" content = "Decentralized P2P marketplace and ownership solution for in-game items." />
+    <meta property = "og:type" content = "website" />
+    <meta property = "og:url" content = "https://hyperloot.net" />
+    <meta property = "og:image" content = "https://hyperloot.net/Hyperchan.png" />
+
+    <title><%= attributes.title %></title>
+  </head>
+  <body>
+
+    <%= attributes.title %>
+    <%= attributes.date %>
+    <%= attributes.author %>
+
+    <%= content %>
+
+    <%= require('./_footer.html') %>
+
+  </body>
+</html>

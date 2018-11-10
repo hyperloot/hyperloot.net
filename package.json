@@ -22,6 +22,8 @@
     "not ie <= 8"
   ],
   "devDependencies": {
+    "front-matter": "^3.0.1",
+    "marked": "^0.5.1",
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.2.5",
     "babel-loader": "^7.1.2",

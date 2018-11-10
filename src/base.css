@@ -58,3 +58,6 @@ a {
 /***** Pages *****/
 @import './about.css';
 @import './token.css';
+
+@import './post.css';
+@import './posts.css';
