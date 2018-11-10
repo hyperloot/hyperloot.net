@@ -60,7 +60,7 @@ section.solutions h1 {
 
 .solutions-block .item p {
   font-size: 1.6rem;
-  line-height: 1.5;
+  line-height: 1.25;
   padding-bottom: 2.4rem;
   margin-bottom: auto;
   letter-spacing: 0.05rem;
@@ -78,14 +78,39 @@ section.solutions h1 {
 .solutions-block .item.coming-soon .suspense {
   color: var(--grey-color);
   text-transform: uppercase;
-  margin-bottom: 1rem;
+  margin-bottom: 1.4rem;
 }
 
+@media (max-width: 1440px) {
+
+  .solutions-block .item {
+    min-height: 38rem;
+    padding: 1.2rem;
+  }
+
+  .solutions-block .item .icon {
+    margin-top: 4rem;
+  }
+
+  .solutions-block .item .button-link {
+    margin-bottom: 1.6rem;
+    padding: 1.6rem 0.8rem;
+  }
+
+  .solutions-block .item.coming-soon .suspense {
+    margin-bottom: 3rem;
+  }
+
+}
 
 @media (max-width: 1368px) {
 
-  section.token {
-    background-size: 25.5%;
+  section.solutions h1 {
+    margin-bottom: 4rem;
+  }
+
+  .solutions-block .item p {
+    font-size: 1.4rem;
   }
 
 }
