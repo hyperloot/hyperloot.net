@@ -25,26 +25,30 @@
 
     <%= require('./_sidebar.html') %>
 
-    <%
-      var templates = {
-        about: require('./about.html'),
-        token: require('./token.html'),
-        solutions: require('./solutions.html')
-      };
+    <div class="wrapper">
 
-      // 'template' we define in webpack
+      <%
+        var templates = {
+          about: require('./about.html'),
+          token: require('./token.html'),
+          solutions: require('./solutions.html')
+        };
 
-      print(templates[template]);
-    %>
+        // 'template' we define in webpack
 
-    <% postsData.forEach(function(post){ %>
-      <a href="/posts/<%= post.filename %>">
-        <%= post.attributes.title %>
-        <%= post.short %>
-      </a>
-    <% }); %>
+        print(templates[template]);
+      %>
 
-    <%= require('./_footer.html') %>
+      <% postsData.forEach(function(post){ %>
+        <a href="/posts/<%= post.filename %>">
+          <%= post.attributes.title %>
+          <%= post.short %>
+        </a>
+      <% }); %>
+
+      <%= require('./_footer.html') %>
+
+    </div>
 
   </body>
 </html>

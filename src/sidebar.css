@@ -131,6 +131,7 @@
 .sidebar .social {
   display: flex;
   flex-direction: column;
+  margin-bottom: 2.4rem;
 }
 
 .sidebar .social a {
