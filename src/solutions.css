@@ -1,15 +1,21 @@
+section.solutions-section {
+  padding: 8rem 0;
+  background-repeat: no-repeat;
+}
+
+section.solutions-section h1 {
+  margin-bottom: 8rem;
+}
+
 section.solutions {
   --grey-color: #a2a7ae;
   display: flex;
   min-height: 100vh;
+  padding: 0;
 }
 
 section.solutions .content {
   margin: auto 0;
-}
-
-section.solutions h1 {
-  margin-bottom: 8rem;
 }
 
 .solutions-block {
@@ -82,9 +88,7 @@ section.solutions h1 {
 }
 
 section.team {
-  padding: 8rem 0;
   background-image: url('./assets/solutions/our-team.png');
-  background-repeat: no-repeat;
   background-size: cover;
 }
 
@@ -92,42 +96,42 @@ section.team h1 {
   margin-bottom: 8rem;
 }
 
-section.team .team-list {
+section.solutions-section .team-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 8rem;
 }
 
-section.team .team-list .team-member {
+section.solutions-section .team-list .team-member {
   width: 21%;
   text-align: center;
   color: var(--dark-grey-color);
 }
 
-section.team .team-list .team-member:first-of-type {
+section.solutions-section .team-list .team-member:first-of-type {
   margin-bottom: 6rem;
 }
 
-section.team .team-list .team-member .avatar{
+section.solutions-section .team-list .team-member .avatar{
   margin-bottom: 1.2rem;
 }
 
-section.team .team-list .team-member .avatar img {
+section.solutions-section .team-list .team-member .avatar img {
   border-radius: 50%;
 }
 
-section.team .team-list .team-member .name {
+section.solutions-section .team-list .team-member .name {
   font-size: 2.4rem;
   margin-bottom: 1.2rem;
 }
 
-section.team .team-list .team-member .role {
+section.solutions-section .team-list .team-member .role {
   font-size: 1.8rem;
   margin-bottom: 1.6rem;
 }
 
-section.team .team-list .team-member .experience {
+section.solutions-section .team-list .team-member .experience {
   font-family: var(--font-family-regular-medium);
   font-size: 1.4rem;
   opacity: 0.7;
@@ -141,6 +145,9 @@ section.team .full-team a {
   margin: 0 auto;
 }
 
+section.advisory-team {
+
+}
 
 
 @media (max-width: 1440px) {
