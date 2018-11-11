@@ -13,3 +13,16 @@
   box-shadow: 0px 6px 14.22px 3.78px rgba(245, 55, 67, 0.22);
   color: #fff;
 }
+
+.button-link.section-link {
+  text-transform: uppercase;
+  background-color: transparent;
+  border-color: #a2a7ae;
+  color: #a2a7ae;
+}
+
+.button-link.section-link:hover {
+  border-color: var(--accent-color);
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}

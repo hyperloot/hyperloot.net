@@ -10,6 +10,7 @@
   --accent-color: #f53743;
   --white-color: #fff;
   --black-color: #0e1213;
+  --dark-grey-color: #5c646e;
   --grey-color: #55606c;
   --light-grey-color: #e5e5e5;
 }
@@ -62,6 +63,8 @@ a {
 @import './about.css';
 @import './token.css';
 @import './solutions.css';
+
+@import './posts.css';
 
 @import './post.css';
 @import './posts.css';
