@@ -1,5 +1,5 @@
 section.posts {
-  padding: 10rem 0;
+  padding: 10rem 0 0 0;
 }
 
 section.posts .posts-heading {
@@ -64,7 +64,7 @@ section.posts .posts-tags .read-more {
 }
 
 section.posts .post-list {
-  margin-bottom: 6.4rem;
+  margin-bottom: 1.6rem;
 }
 
 section.posts .load-more {
@@ -73,12 +73,22 @@ section.posts .load-more {
   justify-content: center;
 }
 
+section.posts .load-more {
+  padding-bottom: 14rem;
+  border-bottom: 1px dotted #e5e8ed;
+}
+
 .post-preview {
   display: flex;
   align-items: flex-start;
   padding: 3.6rem 0;
   border-top: 1px dotted #e5e8ed;
   border-bottom: 1px dotted #e5e8ed;
+}
+
+.post-preview:nth-of-type(2),
+.post-preview:last-of-type {
+  border-bottom: none;
 }
 
 .post-preview.hidden {
@@ -161,9 +171,18 @@ section.posts .load-more {
   color: var(--dark-grey-color);
 }
 
+.post-preview .preview-footer.preview-footer-short {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post-preview .preview-footer.preview-footer-short .discuss a {
+  padding: 1.2rem 2.4rem;
+}
+
 .post-preview .preview-footer {
   display: flex;
-  margin-right: 3.2rem;
 }
 
 .post-preview .preview-footer > div {

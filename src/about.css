@@ -1,3 +1,11 @@
+.page-about section h2 {
+  font-size: 3rem;
+}
+
+.page-about .join {
+  padding-top: 5rem;
+}
+
 section.promo {
   display: flex;
   min-height: 100vh;
