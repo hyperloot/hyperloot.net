@@ -238,6 +238,7 @@ section.get-started:after {
   width: 21rem;
   background-image: url(assets/about/roshan_bg.svg);
   background-repeat: no-repeat;
+  pointer-events: none;
 }
 
 .page-wrapper section.get-started h2 {

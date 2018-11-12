@@ -5,9 +5,7 @@ excerpt: I'm Alex and I'm and experienced blockchain enthusiast. I've been into 
 date: 3 hours ago
 author: Alex Vasilenka
 tags:
-  - advisors
-  - partners
-  - product
+  - team
 ---
 
 ## This is some text about some stuff that happened sometime ago

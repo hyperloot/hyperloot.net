@@ -5,8 +5,7 @@ excerpt:  Off with the big news, everyone. Hyperloot is launching its bounty cam
 image: img/post-4.jpg
 author: Den Permyakov
 tags:
-  - article
-  - test
+  - ux
 ---
 
 This is some text about some stuff that happened sometime ago

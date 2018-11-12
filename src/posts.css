@@ -1,8 +1,11 @@
-section.posts {}
+section.posts {
+  padding: 10rem 0;
+}
 
 section.posts .posts-heading {
   display: flex;
   text-transform: uppercase;
+  margin-bottom: 2.4rem;
 }
 
 section.posts .posts-heading h2 {
@@ -21,7 +24,7 @@ section.posts .posts-heading .followers {
 section.posts .posts-tags {
   display: flex;
   align-items: center;
-  padding-bottom: 1.6rem;
+  margin-bottom: 2.4rem;
 }
 
 section.posts .posts-tags ul {
@@ -34,17 +37,25 @@ section.posts .posts-tags ul {
 }
 
 section.posts .posts-tags ul li:not(:last-of-type) {
-  margin-right: 2.4rem;
+  margin-right: 0.6rem;
 }
 
-section.posts .posts-tags ul li a {
+section.posts .posts-tags.rectangular-tags ul li a {
+  padding: 6px 12px;
   font-family: var(--font-family-regular-medium);
   font-size: 1.8rem;
-  color: var(--dark-grey-color);
+  color: var(--white-color);
+  background-color: #bbbfc4;
+  border-radius: 0.5rem;
 }
 
-section.posts .posts-tags ul li a:hover {
-  color: var(--accent-color);
+section.posts .posts-tags.rectangular-tags ul li a.active {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+}
+
+section.posts .posts-tags.rectangular-tags ul li a:hover {
+  background-color: var(--accent-color);
 }
 
 section.posts .posts-tags .read-more {
@@ -52,12 +63,26 @@ section.posts .posts-tags .read-more {
   margin-left: auto;
 }
 
+section.posts .post-list {
+  margin-bottom: 6.4rem;
+}
+
+section.posts .load-more {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .post-preview {
   display: flex;
   align-items: flex-start;
-  padding: 36px 0;
+  padding: 3.6rem 0;
   border-top: 1px dotted #e5e8ed;
   border-bottom: 1px dotted #e5e8ed;
+}
+
+.post-preview.hidden {
+  display: none;
 }
 
 .post-preview .image {
@@ -84,6 +109,7 @@ section.posts .posts-tags .read-more {
 }
 
 .post-preview .preview .preview-header .date {
+  align-self: flex-start;
   font-size: 1.4rem;
   color: var(--dark-grey-color);
   opacity: 0.6;
@@ -106,6 +132,14 @@ section.posts .posts-tags .read-more {
   margin-right: 0.6rem;
 }
 
+.post-preview .preview .preview-header .social-networks a:hover {
+  border-color: var(--accent-color);
+}
+
+.post-preview .preview .preview-header .social-networks a:hover svg {
+  fill: var(--accent-color);
+}
+
 .post-preview .preview .preview-header .social-networks a svg {
   --size: 1.6rem;
   height: var(--size);
@@ -121,7 +155,7 @@ section.posts .posts-tags .read-more {
 
 .post-preview .preview-body p {
   margin-bottom: 2.4rem;
-  font-family: var(--font-family-regular-light);
+  font-family: var(--font-family-regular-medium);
   font-size: 1.8rem;
   line-height: 1.5;
   color: var(--dark-grey-color);
