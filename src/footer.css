@@ -57,5 +57,17 @@
     padding-bottom: 8rem;
   }
 
+  .join h2 {
+    font-size: 2.4rem;
+  }
+
+  .join .social a {
+    --size: 5rem;
+  }
+
+  .join .social a svg {
+    width: 3rem;
+  }
+
 }
 
