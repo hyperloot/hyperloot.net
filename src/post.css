@@ -163,16 +163,64 @@ section.post .post-footer .social-networks a svg {
 
 @media (max-width: 700px) {
 
-  section.post .post-meta h1 {
+  .wrapper.post-page {
+    padding-top: 0rem;
+  }
+
+  .post-page section.post {
+    margin-top: 0;
+  }
+
+  .post-page section.post .post-meta h1 {
+    font-size: 3rem;
+    letter-spacing: 0.025rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .post-page section.post .post-meta > div {
+    padding-bottom: 0;
+    font-size: 1.4rem;
+    border-bottom: none;
+  }
+
+  .post-nav {
+    position: static;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 2rem 3rem;
+    margin-top: 5.3rem;
+    height: 6rem;
+    box-shadow: none;
+  }
+
+  .post-page section.post .post-meta h1 {
     font-size: 3.6rem;
   }
 
-  section.post .post-content {
+  .post-page section.post .post-content {
     font-size: 1.8rem;
   }
 
-  section.post .post-image {
+  .post-page section.post .post-image {
     padding-bottom: 3rem;
+  }
+
+  section.post .post-content p {
+    line-height: 1.75;
+  }
+
+  section.post .post-content p:not(:last-of-type) {
+    margin-bottom: 4rem;
+  }
+
+  section.post .post-content ul {
+    padding-left: 2rem;
+    margin: 4rem 0;
+  }
+
+  section.post .post-content a {
+    word-break: break-word;
   }
 
 }

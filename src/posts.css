@@ -214,7 +214,6 @@ section.posts .load-more {
 
   section.posts .posts-tags.rectangular-tags ul li a {
     font-size: 1.4rem;
-    padding: 0.4rem 0.8rem;
   }
 
   section.posts .posts-tags ul li:not(:last-of-type) {

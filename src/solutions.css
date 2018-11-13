@@ -193,7 +193,7 @@ section.advisory-team {
 
 }
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
 
   .page-solutions h2.section-heading {
     font-size: 3.6rem;
@@ -211,6 +211,7 @@ section.advisory-team {
 
   section.solutions .solutions-block {
     flex-wrap: wrap;
+    padding-bottom: 6rem;
   }
 
   section.solutions .solutions-block .item {
@@ -234,11 +235,11 @@ section.advisory-team {
   }
 
   section.solutions-section {
-    padding: 10rem 0
+    padding: 10rem 0 0 0;
   }
 
   section.solutions-section .team-list {
-    margin-bottom: 5rem;
+    margin-bottom: 0;
   }
 
   section.solutions-section .team-list .team-member {
@@ -248,10 +249,11 @@ section.advisory-team {
 
   section.team {
     background-image: url('./assets/solutions/our-team-mobile.png');
+    padding-bottom: 6rem;
   }
 
   section.team .full-team a {
-    width: 80%;
+    width: 100%;
   }
 
 }
