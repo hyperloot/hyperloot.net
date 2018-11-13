@@ -13,14 +13,6 @@ section.posts .posts-heading h2 {
   font-size: 6rem;
 }
 
-section.posts .posts-heading .followers {
-  margin-top: 0.75rem;
-  margin-left: 2rem;
-  font-family: var(--font-family-regular-medium);
-  font-size: 1.4rem;
-  color: #a2a7ae;
-}
-
 section.posts .posts-tags {
   display: flex;
   align-items: center;

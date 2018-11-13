@@ -39,75 +39,77 @@
         print(templates[template]);
       %>
 
-      <section class="posts">
+      <% if(template != 'solutions'){ %>
 
-        <div class="container">
+        <section class="posts">
 
-          <div class="posts-heading">
-            <h2>Blog</h2>
-            <div class="followers">68 followers</div>
-          </div>
+          <div class="container">
 
-          <div id="posts-tag" class="posts-tags rectangular-tags">
-            <ul>
-              <li><a href="#">team</a></li>
-              <li><a href="#">partners</a></li>
-              <li><a href="#">product</a></li>
-              <li><a href="#">vision</a></li>
-              <li><a href="#">front-end</a></li>
-              <li><a href="#">ux</a></li>
-              <li><a href="#">bounty</a></li>
-              <li><a href="#">video</a></li>
-            </ul>
-            <a class="read-more" href="#">more</a>
-          </div>
+            <div class="posts-heading">
+              <h2>Blog</h2>
+            </div>
 
-          <div class="post-list">
-            <% postsData.forEach(function(post, item){ %>
-                <% if (item < 2) { %>
-                  <div class="post-preview <%= post.attributes.tags.join(' ') %>">
-                <% } else { %>
-                  <div class="post-preview hidden <%= post.attributes.tags.join(' ') %>">
-                <% } %>
-                <div class="image">
-                  <a href="/posts/<%= post.filename %>">
-                    <img src="<%= post.attributes.image %>" alt="post-preview">
-                  </a>
-                </div>
-                <div class="preview">
-                  <div class="preview-header">
-                    <div class="date"><%= post.attributes.date %></div>
-                  </div>
-                  <div class="preview-body">
+            <div id="posts-tag" class="posts-tags rectangular-tags">
+              <ul>
+                <li><a href="#">team</a></li>
+                <li><a href="#">partners</a></li>
+                <li><a href="#">product</a></li>
+                <li><a href="#">vision</a></li>
+                <li><a href="#">front-end</a></li>
+                <li><a href="#">ux</a></li>
+                <li><a href="#">bounty</a></li>
+                <li><a href="#">video</a></li>
+              </ul>
+            </div>
+
+            <div class="post-list">
+              <% postsData.forEach(function(post, item){ %>
+                  <% if (item < 2) { %>
+                    <div class="post-preview <%= post.attributes.tags.join(' ') %>">
+                  <% } else { %>
+                    <div class="post-preview hidden <%= post.attributes.tags.join(' ') %>">
+                  <% } %>
+                  <div class="image">
                     <a href="/posts/<%= post.filename %>">
-                      <h3><%= post.attributes.title %></h3>
+                      <img src="<%= post.attributes.image %>" alt="post-preview">
                     </a>
-                    <p><%= post.attributes.excerpt %></p>
                   </div>
-                  <div class="preview-footer preview-footer-short">
-                    <div class="author">
-                      by <span><%= post.attributes.author %></span>
+                  <div class="preview">
+                    <div class="preview-header">
+                      <div class="date"><%= post.attributes.date %></div>
                     </div>
-                    <div class="discuss">
-                      <a href="#" class="button-link section-link">Discuss</a>
+                    <div class="preview-body">
+                      <a href="/posts/<%= post.filename %>">
+                        <h3><%= post.attributes.title %></h3>
+                      </a>
+                      <p><%= post.attributes.excerpt %></p>
+                    </div>
+                    <div class="preview-footer preview-footer-short">
+                      <div class="author">
+                        by <span><%= post.attributes.author %></span>
+                      </div>
+                      <div class="discuss">
+                        <a href="https://discord.gg/My3PfqK" class="button-link section-link">Discuss</a>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            <% }); %>
+              <% }); %>
+            </div>
+
+            <div class="load-more">
+              <a href="#" class="button-link section-link" onclick="showMorePosts(event)">
+                View more
+              </a>
+            </div>
+
           </div>
 
-          <div class="load-more">
-            <a href="#" class="button-link section-link" onclick="showMorePosts(event)">
-              View more
-            </a>
-          </div>
+        </section>
 
-        </div>
+      <%}%>
 
-      </section>
-
-    <%= require('./_footer.html') %>
+      <%= require('./_footer.html') %>
 
     </div>
 
