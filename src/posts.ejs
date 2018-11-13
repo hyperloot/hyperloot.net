@@ -75,19 +75,55 @@
             <% }); %>
           </div>
 
-          <div class="load-more">
-            <a href="#" class="button-link section-link" onclick="showMorePosts(event)">
-              View more
-            </a>
-          </div>
-
         </div>
 
       </section>
 
+    <%= require('./_footer.html') %>
+
     </div>
 
-    <%= require('./_footer.html') %>
+
+    <script>
+
+      let postsTagsList = document.getElementById('posts-tag');
+      let tags = [];
+
+      postsTagsList.addEventListener('click', (e) => {
+        e.preventDefault();
+
+        let element = e.target;
+        let tagName = element.innerText;
+        let postList = document.querySelectorAll('.post-preview');
+
+        //toggle tag class for styling purposes
+        element.classList.toggle('active');
+
+        //update active tags array
+        tags.includes(tagName)
+          ? tags = tags.filter(item => item != tagName)
+          : tags.push(tagName)
+
+        //if there's active tags, hide all posts which doesn't match tag combination
+        if(tags.length > 0){
+          postList.forEach(element => {
+
+            let classList = element.classList.value.split(' ');
+
+            for(let i = 0; i < tags.length; i++){
+              classList.includes(tags[i])
+                ? element.classList.remove('hidden')
+                : element.classList.add('hidden')
+            }
+
+          })
+        } else {
+          postList.forEach(element => element.classList.remove('hidden'));
+        }
+
+      })
+
+    </script>
 
   </body>
 </html>
