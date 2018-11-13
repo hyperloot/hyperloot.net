@@ -49,3 +49,13 @@
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
+
+@media (max-width: 740px) {
+
+  .join {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
+}
+

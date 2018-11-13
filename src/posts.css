@@ -41,7 +41,7 @@ section.posts .posts-tags ul li:not(:last-of-type) {
 }
 
 section.posts .posts-tags.rectangular-tags ul li a {
-  padding: 6px 12px;
+  padding: 0.6rem 1.2rem;
   font-family: var(--font-family-regular-medium);
   font-size: 1.8rem;
   color: var(--white-color);
@@ -97,7 +97,7 @@ section.posts .load-more {
 
 .post-preview .image {
   flex-basis: 45%;
-  margin-right: 36px;
+  margin-right: 3.6rem;
 }
 
 .post-preview .image img {
@@ -214,10 +214,53 @@ section.posts .load-more {
 
 }
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
 
   section.posts {
     padding: 5rem 0 0 0;
+  }
+
+  section.posts .posts-tags.rectangular-tags ul li a {
+    font-size: 1.4rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  section.posts .posts-tags ul li:not(:last-of-type) {
+    margin-right: 1.2rem;
+  }
+
+  section.posts .posts-tags .read-more {
+    display: none;
+  }
+
+  .post-preview {
+    flex-wrap: wrap;
+  }
+
+  .post-preview .image {
+    flex-basis: 100%;
+    margin-right: 0;
+    margin-bottom: 2.4rem;
+  }
+
+  .post-preview h3 {
+    font-size: 2.4rem;
+  }
+
+  .post-preview .preview-body p {
+    font-size: 1.6rem;
+  }
+
+  .post-preview .preview-footer.preview-footer-short .discuss a {
+    padding: 0.8rem 1.6rem;
+  }
+
+  section.posts .load-more {
+    padding-bottom: 6rem;
+  }
+
+  section.posts .button-link {
+    width: 75%;
   }
 
 }
