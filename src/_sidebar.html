@@ -1,10 +1,10 @@
-<aside class="sidebar">
+<aside id="sidebar" class="sidebar">
   <div class="sidebar-header">
     <a href="https://hyperloot.net/" target="_blank" class="logo">
       <img src="assets/logo.svg" width="36" class="small-logo">
       <img src="assets/hyperloot-logo.svg" class="full-logo">
     </a>
-    <a class="toggle-mnu" href="#"><span></span></a>
+    <a id="toggle-mnu" class="toggle-mnu" href="#"><span></span></a>
   </div>
 
   <div class="search">
@@ -41,3 +41,14 @@
   </div>
 
 </aside>
+
+<script>
+  
+  let sidebarToggleButton = document.getElementById('toggle-mnu');
+  let sidebar = document.getElementById('sidebar');
+
+  sidebarToggleButton.addEventListener('click', () => {
+    sidebar.classList.toggle('active');
+  })
+
+</script>

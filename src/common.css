@@ -19,10 +19,10 @@
   color: var(--accent-color);
 }
 
-.page-wrapper section h2,
+/* .page-wrapper section h2,
 .page-wrapper section h3 {
   font-family: 'Gilroy';
-}
+} */
 
 .page-wrapper section p {
   font-family: 'Gilroy-Medium';
@@ -39,7 +39,9 @@
 
   .wrapper {
     padding-top: 5.6rem;
-    padding-bottom: 9rem;
+    /* padding-bottom: 9rem; */
+    width: 100%;
+    margin: 0 auto;
   }
 
 }

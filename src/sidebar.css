@@ -188,6 +188,7 @@
     padding: 1.2rem 1.6rem;
     margin-bottom: 0;
     border-bottom: 0;
+    box-shadow: none;
   }
 
   .sidebar .toggle-mnu {
@@ -206,7 +207,7 @@
   }
 
   .sidebar.active .logo .full-logo {
-    margin-top: 0.4rem;
+    width: 16rem;
     display: block;
   }
 
@@ -265,13 +266,13 @@
   .sidebar.active .social {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     flex-direction: row;
     padding: 4rem 2.8rem 4rem 2.8rem;
   }
 
   .sidebar.active .social a {
-    width: 33%;
-    margin-bottom: 3rem;
+    width: 4rem;
   }
 
   .sidebar.active .social a.discord,
@@ -290,6 +291,18 @@
   .sidebar.active .social a.telegram,
   .sidebar.active .social a.youtube {
     text-align: right;
+  }
+
+}
+
+@media (max-width: 500px) {
+
+  .sidebar.active .social {
+    padding: 2rem 2.8rem 2rem 2.8rem;
+  }
+
+  .sidebar.active .social a {
+    width: 2rem;
   }
 
 }

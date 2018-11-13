@@ -198,3 +198,27 @@ section.posts .load-more {
   color: #000;
 }
 
+@media (max-width: 768px) {
+
+  section.posts .posts-tags ul li {
+    margin-bottom: 2.4rem;
+  }
+
+  section.posts .posts-tags .read-more {
+    align-self: flex-start;
+  }
+
+  section.posts .button-link {
+    width: 30%;
+  }
+
+}
+
+@media (max-width: 500px) {
+
+  section.posts {
+    padding: 5rem 0 0 0;
+  }
+
+}
+
