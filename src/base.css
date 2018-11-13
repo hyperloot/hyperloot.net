@@ -41,7 +41,7 @@ body {
   background: var(--accent-color);
 }
 
-b, strong, a, h1, h2 {
+b, strong, h1, h2 {
   font-weight: bold;
 }
 

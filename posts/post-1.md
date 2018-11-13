@@ -8,8 +8,6 @@ tags:
   - team
 ---
 
-# How to decentralised
-
 I’m Alex and I’m an experienced blockchain enthusiast. I’ve been into game development for quite a while and I am very interested in further gamedev fostering. I always have my eyes on new projects in the topic, but unfortunately, all decisions that are offered here are centralized. There is no mechanism for gathering developers yet and no incentive to do this. That’s why I’ve decided to create an ecosystem, that will motivate all game developers and producers, investors, players and other stakeholders to be brought together. This ecosystem is Hyperloot and I’ll tell you more about it.
 
 Hyperloot is the place, where gaming meets blockchain. The main idea behind the project is to merge the typical principles of crypto and open source. We want to develop a project that aims to profit all of the stakeholders, that’s why we need it to be fair and decentralized. Such project requires all of the participants to be guided by transparent methods and processes. There should also be no third parties to govern them. The only ecosystem that allows to adopt these principles is DAO.
@@ -30,15 +28,15 @@ DAO implementation allows:
 
 Hyperloot is inspired by other DAO adopters. The first one was Daniel Larimer, he established DAO system in a BitShares. They executed voting system, committees, and work&proposal model. Another adopter is Vitalik Buterin, whose attempts to develop DAO ended up with dramatical drop of Ethereum value. DAO concept is now also implemented in Dash. Basically, DAO is implemented as automatic reward system, where a reward size depends on your actions. When you join the organization you are motivated to bring value and stay there, because you make profit as project evolves. That’s how basic DAO principles work inside Dash.
 
-Media channels
-https://t.me/HyperLoot
-https://twitter.com/Hyperloot
-https://www.reddit.com/r/hyperloot/
-https://www.facebook.com/pg/401874386882912
-https://www.linkedin.com/company/hyperloot/
-https://www.youtube.com/channel/UCCHUAJwu5KWBy3P4tzTVWfQ
-https://bitcointalk.org/index.php?topic=5029471.0
+Media channels</br>
+https://t.me/HyperLoot</br>
+https://twitter.com/Hyperloot</br>
+https://www.reddit.com/r/hyperloot/</br>
+https://www.facebook.com/pg/401874386882912</br>
+https://www.linkedin.com/company/hyperloot/</br>
+https://www.youtube.com/channel/UCCHUAJwu5KWBy3P4tzTVWfQ</br>
+https://bitcointalk.org/index.php?topic=5029471.0</br>
 
-Onepager and deck
-https://static.hyperloot.net/documents/hyperloot_onepager.pdf
+Onepager and deck</br>
+https://static.hyperloot.net/documents/hyperloot_onepager.pdf</br>
 https://static.hyperloot.net/documents/hyperloot_deck.pdf
