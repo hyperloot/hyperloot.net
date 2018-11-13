@@ -139,6 +139,7 @@ section.post .post-footer .social-networks a {
   border-radius: 50%;
   padding: 0.8rem;
   border: 2px solid #e2e6eb;
+  word-wrap: break-word;
 }
 
 section.post .post-footer .social-networks a:not(:last-of-type) {
@@ -158,4 +159,20 @@ section.post .post-footer .social-networks a svg {
   height: var(--size);
   width: var(--size);
   fill: #c4c7cd;
+}
+
+@media (max-width: 700px) {
+
+  section.post .post-meta h1 {
+    font-size: 3.6rem;
+  }
+
+  section.post .post-content {
+    font-size: 1.8rem;
+  }
+
+  section.post .post-image {
+    padding-bottom: 3rem;
+  }
+
 }
