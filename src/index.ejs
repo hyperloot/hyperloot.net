@@ -49,18 +49,7 @@
               <h2>Blog</h2>
             </div>
 
-            <div id="posts-tag" class="posts-tags rectangular-tags">
-              <ul>
-                <li><a href="#">team</a></li>
-                <li><a href="#">partners</a></li>
-                <li><a href="#">product</a></li>
-                <li><a href="#">vision</a></li>
-                <li><a href="#">front-end</a></li>
-                <li><a href="#">ux</a></li>
-                <li><a href="#">bounty</a></li>
-                <li><a href="#">video</a></li>
-              </ul>
-            </div>
+            <div id="posts-tag" class="posts-tags rectangular-tags"></div>
 
             <div class="post-list">
               <% postsData.forEach(function(post, item){ %>
@@ -118,10 +107,12 @@
       let postsTags = document.getElementById('posts-tag');
       let tags = [];
 
-      // makeTagsList(allTags);
+      getTagsList();
+      makeTagsList(getTagsList());
 
       postsTags.addEventListener('click', (e) => {
         e.preventDefault();
+
 
         let element = e.target;
         let tagName = element.innerText;
@@ -161,20 +152,42 @@
             postList[1].classList.remove('hidden');
       }
 
+      function getTagsList(){
+        let posts = document.querySelectorAll('.post-preview');
+        let tagsList = [];
+        let filteredTagsList = [];
+
+        posts.forEach(element => tagsList.push(element.classList.value.split(' ')));
+
+        tagsList.forEach(element => {
+          element.forEach(element => {
+            if(!filteredTagsList.includes(element) && element != 'hidden' && element != 'post-preview'){
+              filteredTagsList.push(element);
+            }
+          })
+        })
+
+        return filteredTagsList;
+
+      }
+
       function makeTagsList(listData) {
           let listElement = document.createElement('ul');
           postsTags.appendChild(listElement);
+
+          listData
 
           let numberOfListItems = listData.length;
 
           for (let i = 0; i < numberOfListItems; i++) {
             let listItem = document.createElement('li');
-            listItem.innerHTML = listData[i];
+            let listItemLink = document.createElement('a');
+            listItemLink.href = '#';
+            listItemLink.innerHTML = listData[i];
+            listItem.appendChild(listItemLink);
             listElement.appendChild(listItem);
           }
       }
-
-
 
     </script>
 
