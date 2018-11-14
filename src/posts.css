@@ -238,6 +238,10 @@ section.posts .load-more {
     font-size: 2.4rem;
   }
 
+  .post-preview a:hover h3 {
+    color: var(--accent-color);
+  }
+
   .post-preview .preview-body p {
     font-size: 1.6rem;
   }

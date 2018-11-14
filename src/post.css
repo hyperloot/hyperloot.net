@@ -14,6 +14,7 @@
   display: flex;
   align-items: center;
   color: var(--dark-grey-color);
+  line-height: 1;
 }
 
 .post-nav a:hover {
@@ -192,6 +193,10 @@ section.post .post-footer .social-networks {
 
   section.post .post-content a {
     word-break: break-word;
+  }
+
+  section.posts .posts-tags.rectangular-tags ul li a {
+    background-color: #bbbfc4;
   }
 
 }

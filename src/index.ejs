@@ -87,7 +87,7 @@
             </div>
 
             <div class="load-more">
-              <a href="#" class="button-link section-link" onclick="showMorePosts(event)">
+              <a id="load-more" href="#" class="button-link section-link" onclick="showMorePosts(event)">
                 View more
               </a>
             </div>
@@ -109,12 +109,10 @@
       let postsTags = document.getElementById('posts-tag');
       let tags = [];
 
-      getTagsList();
       makeTagsList(getTagsList());
 
       postsTags.addEventListener('click', (e) => {
         e.preventDefault();
-
 
         let element = e.target;
         let tagName = element.innerText;
@@ -141,6 +139,10 @@
             }
 
           })
+
+          //hide load more button
+          document.getElementById('load-more').classList.add('hidden');
+
         } else {
           postList.forEach(element => element.classList.remove('hidden'));
         }
@@ -150,8 +152,16 @@
       function showMorePosts(event){
         event.preventDefault();
         let postList = document.querySelectorAll('.post-preview.hidden');
-            postList[0].classList.remove('hidden');
-            postList[1].classList.remove('hidden');
+
+        if(postList.length === 2){
+          postList[0].classList.remove('hidden');
+          postList[1].classList.remove('hidden');
+          event.target.classList.add('hidden');
+        } else {
+          postList[0].classList.remove('hidden');
+          postList[1].classList.remove('hidden');
+        }
+
       }
 
       function getTagsList(){
@@ -170,28 +180,27 @@
         })
 
         return filteredTagsList;
-
       }
 
       function makeTagsList(listData) {
-          let listElement = document.createElement('ul');
-          postsTags.appendChild(listElement);
+        let listElement = document.createElement('ul');
+        postsTags.appendChild(listElement);
 
-          listData
+        listData
 
-          let numberOfListItems = listData.length;
+        let numberOfListItems = listData.length;
 
-          for (let i = 0; i < numberOfListItems; i++) {
-            let listItem = document.createElement('li');
-            let listItemLink = document.createElement('a');
-            listItemLink.href = '#';
-            listItemLink.innerHTML = listData[i];
-            listItem.appendChild(listItemLink);
-            listElement.appendChild(listItem);
-          }
+        for (let i = 0; i < numberOfListItems; i++) {
+          let listItem = document.createElement('li');
+          let listItemLink = document.createElement('a');
+          listItemLink.href = '#';
+          listItemLink.innerHTML = listData[i];
+          listItem.appendChild(listItemLink);
+          listElement.appendChild(listItem);
+        }
       }
 
-    </script>
+  </script>
 
 
   </body>

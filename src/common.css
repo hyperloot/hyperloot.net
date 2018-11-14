@@ -8,6 +8,10 @@
   margin: 0 auto;
 }
 
+.hidden {
+  display: none;
+}
+
 .section-heading {
   color: var(--black-color);
   font-family: var(--font-family-title);

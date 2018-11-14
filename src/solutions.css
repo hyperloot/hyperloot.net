@@ -118,7 +118,7 @@ section.solutions-section .team-list .team-member:first-of-type {
   margin-bottom: 6rem;
 }
 
-section.solutions-section .team-list .team-member .avatar{
+section.solutions-section .team-list .team-member .avatar {
   margin-bottom: 1.2rem;
 }
 
@@ -154,6 +154,9 @@ section.advisory-team {
   padding: 8rem 0 0 0;
 }
 
+section.solutions-section.advisory-team .team-list {
+  margin-bottom: 0rem;
+}
 
 @media (max-width: 1440px) {
 
