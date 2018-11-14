@@ -95,7 +95,7 @@
 .sidebar nav a {
   display: flex;
   flex-direction: column;
-  font-family: var(--font-family-regular-medium);
+  font-family: var(--font-family-regular-bold);
   font-size: 1.2rem;
   text-transform: uppercase;
   text-align: center;
