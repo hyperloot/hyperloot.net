@@ -115,10 +115,12 @@
 
     <script>
 
-      let postsTagsList = document.getElementById('posts-tag');
+      let postsTags = document.getElementById('posts-tag');
       let tags = [];
 
-      postsTagsList.addEventListener('click', (e) => {
+      // makeTagsList(allTags);
+
+      postsTags.addEventListener('click', (e) => {
         e.preventDefault();
 
         let element = e.target;
@@ -158,6 +160,21 @@
             postList[0].classList.remove('hidden');
             postList[1].classList.remove('hidden');
       }
+
+      function makeTagsList(listData) {
+          let listElement = document.createElement('ul');
+          postsTags.appendChild(listElement);
+
+          let numberOfListItems = listData.length;
+
+          for (let i = 0; i < numberOfListItems; i++) {
+            let listItem = document.createElement('li');
+            listItem.innerHTML = listData[i];
+            listElement.appendChild(listItem);
+          }
+      }
+
+
 
     </script>
 

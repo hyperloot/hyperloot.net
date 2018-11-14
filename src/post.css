@@ -106,20 +106,20 @@ section.post .post-footer {
   justify-content: space-between;
 }
 
-section.post .post-tags ul {
+section.post .post-tags.rectangular-tags {
   display: flex;
-  flex-basis: 90%;
+  flex-basis: 70%;
   flex-wrap: wrap;
   padding-left: 0;
   margin: 0;
   list-style: none;
 }
 
-section.post .post-tags ul li:not(:last-of-type) {
+section.post .post-tags.rectangular-tags li:not(:last-of-type) {
   margin-right: 0.6rem;
 }
 
-section.post .post-tags.rectangular-tags ul li {
+section.post .post-tags.rectangular-tags li {
   padding: 6px 12px;
   font-family: var(--font-family-regular-medium);
   font-size: 1.8rem;
@@ -130,35 +130,6 @@ section.post .post-tags.rectangular-tags ul li {
 
 section.post .post-footer .social-networks {
   display: flex;
-}
-
-section.post .post-footer .social-networks a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  padding: 0.8rem;
-  border: 2px solid #e2e6eb;
-  word-wrap: break-word;
-}
-
-section.post .post-footer .social-networks a:not(:last-of-type) {
-  margin-right: 0.6rem;
-}
-
-section.post .post-footer .social-networks a:hover {
-  border-color: var(--accent-color);
-}
-
-section.post .post-footer .social-networks a:hover svg {
-  fill: var(--accent-color);
-}
-
-section.post .post-footer .social-networks a svg {
-  --size: 1.6rem;
-  height: var(--size);
-  width: var(--size);
-  fill: #c4c7cd;
 }
 
 @media (max-width: 700px) {
