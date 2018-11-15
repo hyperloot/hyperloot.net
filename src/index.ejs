@@ -54,9 +54,9 @@
             <div class="post-list">
               <% postsData.forEach(function(post, item){ %>
                   <% if (item < 2) { %>
-                    <div class="post-preview <%= post.attributes.tags.join(' ') %>">
-                  <% } else { %>
                     <div class="post-preview hidden <%= post.attributes.tags.join(' ') %>">
+                  <% } else { %>
+                    <div class="post-preview <%= post.attributes.tags.join(' ') %>">
                   <% } %>
                   <div class="image">
                     <a href="/posts/<%= post.filename %>">
@@ -110,6 +110,7 @@
       let tags = [];
 
       makeTagsList(getTagsList());
+      setPostDate();
 
       postsTags.addEventListener('click', (e) => {
         e.preventDefault();
@@ -199,6 +200,16 @@
           listElement.appendChild(listItem);
         }
       }
+
+      function setPostDate(){
+        let dates = document.querySelectorAll('.date');
+        let now = moment([2018, 11, 15]).toNow();
+        dates.forEach(element => {
+          let postDate = element.innerHTML.split('.');
+          element.innerHTML = moment(postDate, 'D-M-Y').fromNow();
+        })
+      }
+
 
   </script>
 
