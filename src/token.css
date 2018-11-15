@@ -226,10 +226,10 @@ section.faq h2 span{
 section.faq .button-link {
   display: block;
   margin: 6rem auto 0 auto;
-  padding: 1.6rem 10rem;
+  padding: 1.6rem 8rem;
   border-radius: 2.3rem;
   font-size: 1.4rem;
-  width: 12.5%;
+  width: 30%;
 }
 
 @media (max-width: 1440px) {

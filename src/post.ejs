@@ -23,13 +23,57 @@
   </head>
   <body>
 
-    <%= attributes.title %>
-    <%= attributes.date %>
-    <%= attributes.author %>
+    <%= require('./_sidebar.html') %>
 
-    <%= content %>
+    <div class="post-nav">
+      <a href="/posts">
+        <svg  x="0px" y="0px" width="10px" height="14px" viewBox="0 0 451.846 451.847" style="enable-background:new 0 0 451.846 451.847;"xml:space="preserve"> <g> <path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744 L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284 c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"/> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> </svg>
+        Go back
+      </a>
+    </div>
 
-    <%= require('./_footer.html') %>
+    <div class="wrapper post-page">
+
+        <section class="post">
+
+          <div class="container">
+
+            <div class="post-meta">
+              <h1><%= attributes.title %></h1>
+              <div>
+                <div class="author">by <span><%= attributes.author %></span></div>
+                <div class="date"><%= attributes.date %></div>
+              </div>
+            </div>
+
+            <div class="post-image">
+              <img src="../<%= attributes.image %>" alt="post image">
+            </div>
+
+            <div class="post-content">
+              <%= content %>
+            </div>
+
+            <div class="post-footer">
+              <ul class="post-tags rectangular-tags">
+                <% attributes.tags.forEach(function(tag){ %>
+                  <li><%= tag %></li>
+                <% }) %>
+              </ul>
+              <div class="social">
+                <div class="social-networks ya-share2" data-size="m" data-lang="en" data-services="facebook,twitter"></div>
+              </div>
+            </div>
+
+          </div>
+
+        </section>
+
+      <%= require('./_footer.html') %>
+
+    </div>
+
+    <script src="//yastatic.net/share2/share.js"></script>
 
   </body>
 </html>

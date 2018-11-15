@@ -17,14 +17,111 @@
   </head>
   <body>
 
-    <% postsData.forEach(function(post){ %>
-      <a href="/posts/<%= post.filename %>">
-        <%= post.attributes.title %>
-        <%= post.short %>
-      </a>
-    <% }); %>
+    <%= require('./_sidebar.html') %>
+
+    <div class="wrapper">
+
+      <section class="posts">
+
+        <div class="container">
+
+          <div class="posts-heading">
+            <h2>Blog</h2>
+          </div>
+
+          <div id="posts-tag" class="posts-tags rectangular-tags">
+            <ul>
+              <li><a href="#">team</a></li>
+              <li><a href="#">partners</a></li>
+              <li><a href="#">product</a></li>
+              <li><a href="#">vision</a></li>
+              <li><a href="#">front-end</a></li>
+              <li><a href="#">ux</a></li>
+              <li><a href="#">bounty</a></li>
+              <li><a href="#">video</a></li>
+            </ul>
+          </div>
+
+          <div class="post-list">
+            <% postsData.forEach(function(post, item){ %>
+              <div class="post-preview <%= post.attributes.tags.join(' ') %>">
+                <div class="image">
+                  <a href="/posts/<%= post.filename %>">
+                    <img src="<%= post.attributes.image %>" alt="post-preview">
+                  </a>
+                </div>
+                <div class="preview">
+                  <div class="preview-header">
+                    <div class="date"><%= post.attributes.date %></div>
+                  </div>
+                  <div class="preview-body">
+                    <a href="/posts/<%= post.filename %>">
+                      <h3><%= post.attributes.title %></h3>
+                    </a>
+                    <p><%= post.attributes.excerpt %></p>
+                  </div>
+                  <div class="preview-footer preview-footer-short">
+                    <div class="author">
+                      by <span><%= post.attributes.author %></span>
+                    </div>
+                    <div class="discuss">
+                      <a href="https://discord.gg/My3PfqK" class="button-link section-link">Discuss</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <% }); %>
+          </div>
+
+        </div>
+
+      </section>
 
     <%= require('./_footer.html') %>
+
+    </div>
+
+
+    <script>
+
+      let postsTagsList = document.getElementById('posts-tag');
+      let tags = [];
+
+      postsTagsList.addEventListener('click', (e) => {
+        e.preventDefault();
+
+        let element = e.target;
+        let tagName = element.innerText;
+        let postList = document.querySelectorAll('.post-preview');
+
+        //toggle tag class for styling purposes
+        element.classList.toggle('active');
+
+        //update active tags array
+        tags.includes(tagName)
+          ? tags = tags.filter(item => item != tagName)
+          : tags.push(tagName)
+
+        //if there's active tags, hide all posts which doesn't match tag combination
+        if(tags.length > 0){
+          postList.forEach(element => {
+
+            let classList = element.classList.value.split(' ');
+
+            for(let i = 0; i < tags.length; i++){
+              classList.includes(tags[i])
+                ? element.classList.remove('hidden')
+                : element.classList.add('hidden')
+            }
+
+          })
+        } else {
+          postList.forEach(element => element.classList.remove('hidden'));
+        }
+
+      })
+
+    </script>
 
   </body>
 </html>

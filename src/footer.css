@@ -1,35 +1,73 @@
 .join {
-  padding-top: 15rem;
+  padding-top: 9rem;
   padding-bottom: 15rem;
 }
 
 .join h2 {
+  font-size: 3rem;
   margin-bottom: 2rem;
 }
 
-.social {
+.join .social {
   display: flex;
   flex-wrap: wrap;
 }
 
-.social a {
-  background: #f53743;
-  width: 4rem;
-  height: 4rem;
+.join .social a {
+  --size: 6.5rem;
+  width: var(--size);
+  height: var(--size);
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
   margin-right: 2rem;
   margin-bottom: 2rem;
+  border: 2px solid #dfe1e3;
+}
+
+.join .social a svg {
+  width: 3rem;
+  fill: #bbbfc4;
+}
+
+.join .social a:hover {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.join .social a:hover svg {
+  fill: var(--accent-color);
 }
 
 .footer {
   position: relative;
-  z-index: 10;
+  z-index: 5;
   background-color: #333333;
   color: #fff;
   font-size: 1.5rem;
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
+
+@media (max-width: 740px) {
+
+  .join {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
+  .join h2 {
+    font-size: 2.4rem;
+  }
+
+  .join .social a {
+    --size: 5rem;
+  }
+
+  .join .social a svg {
+    width: 3rem;
+  }
+
+}
+

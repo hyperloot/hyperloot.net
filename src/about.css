@@ -1,3 +1,11 @@
+.page-about section h2 {
+  font-size: 3rem;
+}
+
+.page-about .join {
+  padding-top: 5rem;
+}
+
 section.promo {
   display: flex;
   min-height: 100vh;
@@ -238,6 +246,7 @@ section.get-started:after {
   width: 21rem;
   background-image: url(assets/about/roshan_bg.svg);
   background-repeat: no-repeat;
+  pointer-events: none;
 }
 
 .page-wrapper section.get-started h2 {
