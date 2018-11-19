@@ -72,6 +72,18 @@ section.posts .load-more {
   border-bottom: 1px dotted #e5e8ed;
 }
 
+section#posts.posts .post-preview:not(:target){
+  display: none;
+}
+
+section#posts.posts.filter-is-inactive .post-preview {
+  display: flex;
+}
+
+section#posts.posts:target .post-preview {
+  display: flex;
+}
+
 .post-preview {
   display: flex;
   align-items: flex-start;
