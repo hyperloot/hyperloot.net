@@ -31,6 +31,18 @@
   fill: var(--dark-grey-color);
 }
 
+section#posts.posts .post-preview:not(:target){
+  display: none;
+}
+
+section#posts.posts.filter-is-inactive .post-preview {
+  display: flex;
+}
+
+section#posts.posts:target .post-preview {
+  display: flex;
+}
+
 section.post {
   margin-top: 12.5%;
 }

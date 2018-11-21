@@ -6,7 +6,6 @@ excerpt: Hey everyone, I'm Vasilisa, and I'm sure that you've all been dying to 
 author: Vasilisa Versus
 tags:
   - product
-  - vision
 ---
 
 This is some text about some stuff that happened sometime ago
