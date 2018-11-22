@@ -639,9 +639,32 @@ section h3 {
   z-index: 5;
   background-color: #333333;
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   padding-top: 3rem;
   padding-bottom: 3rem;
+}
+
+.footer a {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.footer a:before {
+  content: '';
+  width: 2.5rem;
+  height: 3rem;
+  margin-right: 3.2rem;
+  background-image: url(/icon_terms.png?40ebd2747fe2ef94dd4d9bbea52eaa4f);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.footer a span {
+  margin: 0 0.6rem;
+  color: #fff;
 }
 
 @media (max-width: 740px) {
@@ -661,6 +684,14 @@ section h3 {
 
   .join .social a svg {
     width: 3rem;
+  }
+
+  .footer {
+    font-size: 1.2rem;
+  }
+
+  .footer a:before {
+    margin-right: 1.6rem;
   }
 
 }
@@ -2079,18 +2110,20 @@ section.team h1 {
 section.solutions-section .team-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  margin-bottom: 8rem;
 }
 
 section.solutions-section .team-list .team-member {
-  width: 21%;
+  width: 22%;
   text-align: center;
   color: var(--dark-grey-color);
 }
 
-section.solutions-section .team-list .team-member:first-of-type {
+section.solutions-section .team-list .team-member {
   margin-bottom: 6rem;
+}
+
+section.solutions-section .team-list .team-member:not(:nth-of-type(4n)){
+  margin-right: 1%;
 }
 
 section.solutions-section .team-list .team-member .avatar {
@@ -2196,6 +2229,10 @@ section.solutions-section.advisory-team .team-list {
     width: 100%;
     margin-right: 0;
     padding: 2.4rem;
+  }
+
+  section.solutions-section .team-list .team-member:not(:nth-of-type(4n)){
+    margin-right: 0;
   }
 
   section.solutions .solutions-block .item:not(:last-of-type) {
@@ -2656,8 +2693,39 @@ section.post .post-tags.rectangular-tags li {
   border-radius: 0.5rem;
 }
 
-section.post .post-footer .social-networks {
+section.post .post-footer .social {
   display: flex;
+}
+
+section.post .post-footer .social a {
+  --size: 3.2rem;
+  height: var(--size);
+  width: var(--size);
+  border: 2px solid #E4E8ED;
+  border-radius: 50%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+section.post .post-footer .social a svg {
+  fill: #E4E8ED;
+}
+
+section.post .post-footer .social a:hover {
+  border-color: var(--accent-color);
+}
+
+section.post .post-footer .social a:hover svg {
+  fill: var(--accent-color);
+}
+
+section.post .post-footer .social a:not(:last-of-type){
+  margin-right: 0.6rem;
+}
+
+section.post .post-footer .social a svg {
+  width: 1.8rem;
 }
 
 @media (max-width: 700px) {
