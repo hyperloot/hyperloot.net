@@ -14,9 +14,9 @@
     </script>
 
     <meta property = "og:title" content = "<%= attributes.title %>" />
-    <meta property = "og:description" content = "<%= post.attributes.excerpt %>" />
+    <meta property = "og:description" content = "<%= attributes.excerpt %>" />
     <meta property = "og:type" content = "website" />
-    <meta property = "og:url" content = "https://hyperloot.net/posts/<%= post.filename %>" />
+    <meta property = "og:url" content = "https://hyperloot.net/posts/<%= filename %>" />
     <meta property = "og:image" content = "https://hyperloot.net/<%= attributes.image %>" />
 
     <title><%= attributes.title %></title>
@@ -67,11 +67,11 @@
                 </a>
                 <!-- Twitter -->
                 <a id="twitter-share" href="#" target="_blank">
-                  <svg version="1.1" x="0px" y="0px" viewBox="0 0 27.1 22.5" style="enable-background:new 0 0 27.1 22.5;" xml:space="preserve"><g id="Row_1_2_"> <g> <path class="st0" d="M23.7,6.3c0,0.2,0,0.5,0,0.6c0,6.9-5.3,14.9-14.9,14.9c-3,0-5.7-0.8-8-2.3c0.3,0,0.8,0.1,1.3,0.1 c2.5,0,4.7-0.8,6.5-2.2c-2.3,0-4.3-1.6-4.9-3.6c0.3,0.1,0.6,0.1,1,0.1c0.5,0,0.9-0.1,1.4-0.2C3.7,13.1,1.8,11,1.8,8.5 c0,0,0,0,0-0.1C2.5,8.8,3.3,9,4.2,9C2.8,8.2,1.9,6.6,1.9,4.8c0-0.9,0.3-1.8,0.7-2.6c2.6,3.1,6.5,5.2,10.8,5.4 c-0.1-0.4-0.1-0.7-0.1-1.2c0-2.9,2.3-5.3,5.3-5.3c1.5,0,2.9,0.6,3.8,1.7c1.2-0.3,2.3-0.6,3.3-1.3c-0.4,1.2-1.2,2.2-2.3,2.9 c0.9-0.1,1.9-0.4,2.9-0.7C25.5,4.7,24.7,5.6,23.7,6.3z"/> </g> </g> </svg>              
-                </a>                
+                  <svg version="1.1" x="0px" y="0px" viewBox="0 0 27.1 22.5" style="enable-background:new 0 0 27.1 22.5;" xml:space="preserve"><g id="Row_1_2_"> <g> <path class="st0" d="M23.7,6.3c0,0.2,0,0.5,0,0.6c0,6.9-5.3,14.9-14.9,14.9c-3,0-5.7-0.8-8-2.3c0.3,0,0.8,0.1,1.3,0.1 c2.5,0,4.7-0.8,6.5-2.2c-2.3,0-4.3-1.6-4.9-3.6c0.3,0.1,0.6,0.1,1,0.1c0.5,0,0.9-0.1,1.4-0.2C3.7,13.1,1.8,11,1.8,8.5 c0,0,0,0,0-0.1C2.5,8.8,3.3,9,4.2,9C2.8,8.2,1.9,6.6,1.9,4.8c0-0.9,0.3-1.8,0.7-2.6c2.6,3.1,6.5,5.2,10.8,5.4 c-0.1-0.4-0.1-0.7-0.1-1.2c0-2.9,2.3-5.3,5.3-5.3c1.5,0,2.9,0.6,3.8,1.7c1.2-0.3,2.3-0.6,3.3-1.3c-0.4,1.2-1.2,2.2-2.3,2.9 c0.9-0.1,1.9-0.4,2.9-0.7C25.5,4.7,24.7,5.6,23.7,6.3z"/> </g> </g> </svg>
+                </a>
               </div>
             </div>
-        
+
         </div>
 
           </div>
@@ -95,14 +95,14 @@
       setPostDate();
     </script>
     <script>
-      
+
       //construct share links href
       let facebookShareButton = document.getElementById('facebook-share');
       let twitterShareButton = document.getElementById('twitter-share');
 
       let facebookLink = 'http://www.facebook.com/sharer.php?u=' + document.location.href;
       let twitterLink = 'https://twitter.com/share?url=' + document.location.href;;
-      
+
       facebookShareButton.setAttribute('href', facebookLink);
       twitterShareButton.setAttribute('href', twitterLink);
 
