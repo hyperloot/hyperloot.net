@@ -104,18 +104,20 @@ section.team h1 {
 section.solutions-section .team-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  margin-bottom: 8rem;
 }
 
 section.solutions-section .team-list .team-member {
-  width: 21%;
+  width: 22%;
   text-align: center;
   color: var(--dark-grey-color);
 }
 
-section.solutions-section .team-list .team-member:first-of-type {
+section.solutions-section .team-list .team-member {
   margin-bottom: 6rem;
+}
+
+section.solutions-section .team-list .team-member:not(:nth-of-type(4n)){
+  margin-right: 1%;
 }
 
 section.solutions-section .team-list .team-member .avatar {
@@ -221,6 +223,10 @@ section.solutions-section.advisory-team .team-list {
     width: 100%;
     margin-right: 0;
     padding: 2.4rem;
+  }
+
+  section.solutions-section .team-list .team-member:not(:nth-of-type(4n)){
+    margin-right: 0;
   }
 
   section.solutions .solutions-block .item:not(:last-of-type) {

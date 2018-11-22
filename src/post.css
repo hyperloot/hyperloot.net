@@ -141,8 +141,39 @@ section.post .post-tags.rectangular-tags li {
   border-radius: 0.5rem;
 }
 
-section.post .post-footer .social-networks {
+section.post .post-footer .social {
   display: flex;
+}
+
+section.post .post-footer .social a {
+  --size: 3.2rem;
+  height: var(--size);
+  width: var(--size);
+  border: 2px solid #E4E8ED;
+  border-radius: 50%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+section.post .post-footer .social a svg {
+  fill: #E4E8ED;
+}
+
+section.post .post-footer .social a:hover {
+  border-color: var(--accent-color);
+}
+
+section.post .post-footer .social a:hover svg {
+  fill: var(--accent-color);
+}
+
+section.post .post-footer .social a:not(:last-of-type){
+  margin-right: 0.6rem;
+}
+
+section.post .post-footer .social a svg {
+  width: 1.8rem;
 }
 
 @media (max-width: 700px) {

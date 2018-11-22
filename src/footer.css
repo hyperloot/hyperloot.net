@@ -45,9 +45,32 @@
   z-index: 5;
   background-color: #333333;
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   padding-top: 3rem;
   padding-bottom: 3rem;
+}
+
+.footer a {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.footer a:before {
+  content: '';
+  width: 2.5rem;
+  height: 3rem;
+  margin-right: 3.2rem;
+  background-image: url(assets/icon_terms.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.footer a span {
+  margin: 0 0.6rem;
+  color: #fff;
 }
 
 @media (max-width: 740px) {
@@ -67,6 +90,14 @@
 
   .join .social a svg {
     width: 3rem;
+  }
+
+  .footer {
+    font-size: 1.2rem;
+  }
+
+  .footer a:before {
+    margin-right: 1.6rem;
   }
 
 }
