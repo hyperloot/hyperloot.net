@@ -13,11 +13,11 @@
       gtag('config', 'UA-125551451-1');
     </script>
 
-    <meta property = "og:title" content = "HyperLoot" />
-    <meta property = "og:description" content = "Decentralized P2P marketplace and ownership solution for in-game items." />
+    <meta property = "og:title" content = "<%= attributes.title %>" />
+    <meta property = "og:description" content = "<%= post.attributes.excerpt %>" />
     <meta property = "og:type" content = "website" />
-    <meta property = "og:url" content = "https://hyperloot.net" />
-    <meta property = "og:image" content = "https://hyperloot.net/Hyperchan.png" />
+    <meta property = "og:url" content = "https://hyperloot.net/posts/<%= post.filename %>" />
+    <meta property = "og:image" content = "https://hyperloot.net/<%= attributes.image %>" />
 
     <title><%= attributes.title %></title>
   </head>
@@ -34,7 +34,7 @@
 
     <div class="wrapper post-page">
 
-        <section class="post">
+        <section class="post" id="posts">
 
           <div class="container">
 
@@ -47,7 +47,7 @@
             </div>
 
             <div class="post-image">
-              <img src="/<%= attributes.image %>" alt="post image">
+              <img src="<%= attributes.image %>" alt="post image">
             </div>
 
             <div class="post-content">
@@ -82,6 +82,18 @@
 
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+
+    <script>
+      function setPostDate(){
+        let dates = document.querySelectorAll('.date');
+        dates.forEach(element => {
+          let postDate = element.innerHTML.split('.');
+          element.innerHTML = moment(postDate, 'D-M-Y').fromNow();
+        })
+      }
+      setPostDate();
+    </script>
     <script>
       
       //construct share links href

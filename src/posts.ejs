@@ -21,7 +21,7 @@
 
     <div class="wrapper">
 
-      <section class="posts">
+      <section id="posts" class="posts filter-is-inactive">
 
         <div class="container">
 
@@ -31,20 +31,16 @@
 
           <div id="posts-tag" class="posts-tags rectangular-tags">
             <ul>
-              <li><a href="#">team</a></li>
-              <li><a href="#">partners</a></li>
-              <li><a href="#">product</a></li>
-              <li><a href="#">vision</a></li>
-              <li><a href="#">front-end</a></li>
-              <li><a href="#">ux</a></li>
-              <li><a href="#">bounty</a></li>
-              <li><a href="#">video</a></li>
+              <li><a class="tag" href="/posts#posts">All posts</a>
+            <% postsData.forEach(function(post, item){ %>
+              <li><a class="tag" href="#<%= post.attributes.tags %>"><%= post.attributes.tags %></a></li>
+            <%})%>
             </ul>
           </div>
 
           <div class="post-list">
             <% postsData.forEach(function(post, item){ %>
-              <div class="post-preview <%= post.attributes.tags.join(' ') %>">
+              <div id="<%= post.attributes.tags %>" class="post-preview">
                 <div class="image">
                   <a href="/posts/<%= post.filename %>">
                     <img src="<%= post.attributes.image %>" alt="post-preview">
@@ -81,45 +77,34 @@
 
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
 
     <script>
 
-      let postsTagsList = document.getElementById('posts-tag');
-      let tags = [];
+      let postsTags = document.getElementById('posts-tag');
 
-      postsTagsList.addEventListener('click', (e) => {
-        e.preventDefault();
+      postsTags.addEventListener('click', (e) => {
+        let postSection = document.getElementById('posts');
+        let tags = document.querySelectorAll('.tag');
+        let tag = e.target;
 
-        let element = e.target;
-        let tagName = element.innerText;
-        let postList = document.querySelectorAll('.post-preview');
+        //reset previous tag active class and add active class for the choosed tag
+        tags.forEach(element => element.classList.remove('active'));
+        tag.classList.add('active');
 
-        //toggle tag class for styling purposes
-        element.classList.toggle('active');
-
-        //update active tags array
-        tags.includes(tagName)
-          ? tags = tags.filter(item => item != tagName)
-          : tags.push(tagName)
-
-        //if there's active tags, hide all posts which doesn't match tag combination
-        if(tags.length > 0){
-          postList.forEach(element => {
-
-            let classList = element.classList.value.split(' ');
-
-            for(let i = 0; i < tags.length; i++){
-              classList.includes(tags[i])
-                ? element.classList.remove('hidden')
-                : element.classList.add('hidden')
-            }
-
-          })
-        } else {
-          postList.forEach(element => element.classList.remove('hidden'));
-        }
-
+        //remove filter-is-inactive class
+        postSection.classList.remove('filter-is-inactive');
       })
+          
+      function setPostDate(){
+        let dates = document.querySelectorAll('.date');
+        dates.forEach(element => {
+          let postDate = element.innerHTML.split('.');
+          element.innerHTML = moment(postDate, 'D-M-Y').fromNow();
+        })
+      }
+
+      setPostDate();
 
     </script>
 
