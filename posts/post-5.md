@@ -1,12 +1,11 @@
 ---
 title: DAO Hyperloot Open Protocol Solution
 image: /img/post-1.jpg
-excerpt: Hyperloot Open Protocol Solution
-A trade-able token standard, built on Ethereum blockchain. Easily integrated and quickly scaled.
+excerpt: Hyperloot Open Protocol Solution: a tradeable token standard, built on Ethereum blockchain. Easily integrated and quickly scaled.
 date: 01.06.2018
 author: Dan Permyakov
 tags:
-  -development
+  - development
 ---
 
 Hyperloot Open Protocol Solution
