@@ -8,41 +8,41 @@ tags:
   - development
 ---
 
-Hyperloot Open Protocol Solution
+**Hyperloot Open Protocol Solution**
 
 A trade-able token standard, built on Ethereum blockchain. Easily integrated and quickly scaled.
 
-Create
+**Create**
 
 You can create multiple assets for every game. Anything can be turned into value, starting with items and ending with user accounts.
 
-Trade
+**Trade**
 
 Creating a unified capitalization pool regulated by an open economy. Well-crafted and demanded items will rise in cost, increasing market volume.
 
-Promote
+**Promote**
 
 Use cross-trading capabilities to promote each other games. It’s better-than-free advertising you pay with using your own items, no middleman needed.
 
-Get Started…
+**Get Started…**
 
-Newcomers
+**Newcomers**
 
 Learn how to buy, sell and store HLPT tokens, or get involved with the HyperLoot community
 
-Developers
+**Developers**
 
 Take a look at some innovations in our pipeline. Join GitHub to learn more.
 
-Miners
+**Miners**
 
 Start earning HyperLoot tokens by providing stability and staking to decentralised HyperLoot network
 
-Foundation
+**Foundation**
 
 If you would like to get involved, or would simply like to support the team, there are handful of options at your disposal.
 
-Join Us:
+**Join Us:**
 
 Media channels</br>
 https://t.me/HyperLoot</br>
