@@ -29,3 +29,18 @@ Another upcoming challenge for me, something I’d love to get busy with in futu
 
 I’m proud of the work we’ve already done and can’t wait for more challenges and interesting puzzles to crack. More news to come!
 
+**Join Us:**
+
+Media channels</br>
+https://t.me/HyperLoot</br>
+https://twitter.com/Hyperloot</br>
+https://www.reddit.com/r/hyperloot/</br>
+https://www.facebook.com/pg/401874386882912</br>
+https://www.linkedin.com/company/hyperloot/</br>
+https://www.youtube.com/channel/UCCHUAJwu5KWBy3P4tzTVWfQ</br>
+https://bitcointalk.org/index.php?topic=5029471.0</br>
+
+Onepager and deck</br>
+https://static.hyperloot.net/documents/hyperloot_onepager.pdf</br>
+https://static.hyperloot.net/documents/hyperloot_deck.pdf
+
