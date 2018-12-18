@@ -1,7 +1,7 @@
 ---
 title: Hopes and dreams
 date: 21.09.2018
-image: /17_post_vasilisa.png
+image: /img/17_post_vasilisa.png
 excerpt: Hey everyone, I'm Vasilisa, and I'm sure that you've all been dying to know what I'm up to these days :-) For those of you who don't know me, let me just say a few words about my background and where I'm at.
 author: Vasilisa Versus
 tags:
