@@ -7,6 +7,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const moment = require('moment');
 
 const IS_PROD = process.env.NODE_ENV === 'production';
 
@@ -23,7 +24,13 @@ const postsData = posts
     ...post,
     content: marked(post.body),
     short: marked(post.body.split('\n', 3).join('\n')),
-  }));
+  }))
+  .sort((a, b) => {
+    const dateA = moment(a.attributes.date, 'D-M-Y');
+    const dateB = moment(b.attributes.date, 'D-M-Y');
+
+    return dateA.diff(dateB);
+  });
 
 // CONFIG
 const config = {
