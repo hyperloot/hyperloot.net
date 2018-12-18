@@ -2,10 +2,80 @@
 title: Hyperloot Bounty Campaign&colon; How to join the community and get some shiny tokens
 date: 14.11.2018
 excerpt:  Off with the big news, everyone. Hyperloot is launching its bounty campaign. In case you lived under a crypto rock, just a few brief points about this project.
-image: /img/post-4.jpg
+image: /img/15_post_bounty.png
 author: Den Permyakov
 tags:
   - ux
 ---
 
-This is some text about some stuff that happened sometime ago
+Off with the big news, everyone. Hyperloot is launching its bounty campaign. In case you lived under a crypto rock, just a few brief points about this project. Hyperloot integrates gaming with blockchain to introduce a new concept of ownership in gaming, let users tokenize their virtual assets and trade them freely. We’ve already deployed a wallet MVP and launched a viable tokenization prototype. New developments are underway, and we need your support and proactive participation to grow and expand our community and to build a starting market for our native HLT token.
+
+The goal of the bounty campaign is to raise awareness about our activities and mission. We don’t go to ICO or pre-mine, so everyone willing to help out will have an equal opportunity to join and get rewarded.
+
+The bounty campaign starts on September 15, 2018 and ends on October 30, 2018. The rewards will be given to the first 30,000 users who joined our telegram bot so hurry up, the countdown has started!
+
+Here’s how you can join the bounty campaign and earn HLT tokens:
+
+**Airdrop**
+
+Airdrop is a hassle-free way to spread the word about Hyperloot and be rewarded for several seconds of your time.
+
+**How to participate in Airdrop**
+
+1. Go to HyperLoot AirDrop Bot and type in “start”, our bot will guide you
+2. Complete as many Bounty challenges as you can. The more items you check of the list the more HLT tokens you earn. Maximum bounty per person is 5,209 HLT or $1,302 provided all 12 challenges are successfully completed
+3. Submit your Ethereum wallet address and other details, tokens will be distributed on February 15, 2019 with no vesting
+4. Terms are limited to first 30,000 Telegram users, hurry up as the Bounty will run out soon
+
+
+**Minimum requirements**
+
+Discord Account
+Twitter Account
+Telegram Account
+ETH address
+
+**List of challenges**
+
+* Join HyperLoot on Discord channel
+* Subscribe to Hyperloot on Reddit
+* Join HyperLoot channel on Telegram
+* Follow HyperLoot Twitter and Re-tweet the pinned tweet
+* Follow Hyperloot on LinkedIn
+* Post about HyperLoot in Reddit
+* Prepare Hyperloot project overview and post it on your blog, website or other channel
+* Make a post about Hyperloot in Steemit
+* Video review the project in your personal video blog
+* Make a Bitcointalk post about our product
+
+
+**Challenges for game developers**
+
+**Game Developer with min 3 years of experience**
+
+This is a special airdrop for game developers with 3+ years of experience. If you worked in game development for over 3 years and you can prove it, we will give you our tokens with no further action required.
+
+
+**Game Integration Bounty**
+
+
+We give $1000 for first 50 games with integrated HyperLoot SDK
+
+**Want to review the code or see the team?**
+
+We welcome you to join the HyperLoot Protocol GitHub. Most of our code is open source. You can see who is doing what and check the progress. You can also join our team and earn some serious HLT tokens if you are a good developer :)
+
+**Join Us:**
+
+Media channels</br>
+https://t.me/HyperLoot</br>
+https://twitter.com/Hyperloot</br>
+https://www.reddit.com/r/hyperloot/</br>
+https://www.facebook.com/pg/401874386882912</br>
+https://www.linkedin.com/company/hyperloot/</br>
+https://www.youtube.com/channel/UCCHUAJwu5KWBy3P4tzTVWfQ</br>
+https://bitcointalk.org/index.php?topic=5029471.0</br>
+
+Onepager and deck</br>
+https://static.hyperloot.net/documents/hyperloot_onepager.pdf</br>
+https://static.hyperloot.net/documents/hyperloot_deck.pdf
