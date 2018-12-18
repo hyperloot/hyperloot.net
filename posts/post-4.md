@@ -3,7 +3,7 @@ title: Hyperloot Bounty Campaign&colon; How to join the community and get some s
 date: 15.09.2018
 excerpt:  Off with the big news, everyone. Hyperloot is launching its bounty campaign. In case you lived under a crypto rock, just a few brief points about this project.
 image: /img/15_post_bounty.png
-author: Den Permyakov
+author: Dan Permyakov
 tags:
   - ux
 ---
