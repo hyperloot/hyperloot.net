@@ -5,7 +5,7 @@ excerpt: I'm Alex and I'm an experienced blockchain enthusiast. I've been into g
 date: 10.11.2018
 author: Alex Vasilenka
 tags:
-  - team
+  - DAO
 ---
 
 I’m Alex and I’m an experienced blockchain enthusiast. I’ve been into game development for quite a while and I am very interested in further gamedev fostering. I always have my eyes on new projects in the topic, but unfortunately, all decisions that are offered here are centralized. There is no mechanism for gathering developers yet and no incentive to do this. That’s why I’ve decided to create an ecosystem, that will motivate all game developers and producers, investors, players and other stakeholders to be brought together. This ecosystem is Hyperloot and I’ll tell you more about it.
