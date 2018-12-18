@@ -1,7 +1,7 @@
 ---
 title: How to decentralised
-image: /img/post-1.jpg
-excerpt: I'm Alex and I'm and experienced blockchain enthusiast. I've been into game development for quite a while and I am very interested in further gamedev fostering.
+image: /img/20_post_dao2.png
+excerpt: I'm Alex and I'm an experienced blockchain enthusiast. I've been into game development for quite a while and I'm very interested in further gamedev fostering.
 date: 10.11.2018
 author: Alex Vasilenka
 tags:
