@@ -1,7 +1,7 @@
 ---
 title: Hyperloot - the ultimate tokenization model for in-game items
 image: /img/21_post_esports.png
-excerpt: Gaming has long become a viable sport, a legitimate profession, and an essential part of global culture. However, from the property point of view gaming is still stuck in the stone age. Gamers are regarded as solely users who, despite investing a lot of time and effort, are left with nothing but memories as they log out. Enter Hyperloot: the first ever open source Platform as a Service where users can tokenize their in-game assets.
+excerpt: Gaming has long become a viable sport, a legitimate profession, and an essential part of global culture. However, from the property point of view gaming is still stuck in the stone age. Gamers are regarded as solely users who, despite investing a lot of time and effort, are left with nothing but memories as they log out. Enter Hyperloot - the first ever open source Platform as a Service where users can tokenize their in-game assets.
 date: 18.12.2018
 author: Natalia Komar
 tags:
