@@ -1,7 +1,7 @@
 ---
 title: Advanced Features of the New Crypto Wallet - HyperLoot and POA Network Are Changing the Face of Blockchain Gaming
 image: /img/22_partnership_poa.png
-excerpt: HyperLoot has partnered with POA Network to bring the new experience to gamers who use crypto wallets. The New Crypto Wallet does not only assist in cryptocurrency transactions across many games and virtual environments. It also allows visualizing the most valuable assets — in-game items.
+excerpt: HyperLoot has partnered with POA Network to bring the new experience to gamers who use crypto wallets.
 date: 20.12.2018
 author: Alex Vasilenka
 tags:
