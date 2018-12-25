@@ -55,6 +55,7 @@ The best channel to stay up-to-date with us is Discord, so hop in now and keep a
 **Join Us:**
 
 Media channels</br>
+https://discord.gg/PxXRK8e</br>
 https://t.me/HyperLoot</br>
 https://twitter.com/Hyperloot</br>
 https://www.reddit.com/r/hyperloot/</br>
