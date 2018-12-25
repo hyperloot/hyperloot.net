@@ -68,6 +68,7 @@ We welcome you to join the HyperLoot Protocol GitHub. Most of our code is open s
 **Join Us:**
 
 Media channels</br>
+https://discord.gg/PxXRK8e</br>
 https://t.me/HyperLoot</br>
 https://twitter.com/Hyperloot</br>
 https://www.reddit.com/r/hyperloot/</br>
