@@ -29,6 +29,7 @@ DAO implementation allows:
 Hyperloot is inspired by other DAO adopters. The first one was Daniel Larimer, he established DAO system in a BitShares. They executed voting system, committees, and work&proposal model. Another adopter is Vitalik Buterin, whose attempts to develop DAO ended up with dramatical drop of Ethereum value. DAO concept is now also implemented in Dash. Basically, DAO is implemented as automatic reward system, where a reward size depends on your actions. When you join the organization you are motivated to bring value and stay there, because you make profit as project evolves. That’s how basic DAO principles work inside Dash.
 
 Media channels</br>
+https://discord.gg/PxXRK8e</br>
 https://t.me/HyperLoot</br>
 https://twitter.com/Hyperloot</br>
 https://www.reddit.com/r/hyperloot/</br>
