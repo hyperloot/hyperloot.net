@@ -51,6 +51,7 @@ The Hyperloot team are stuffing their Christmas stockings full of kick-ass in-ga
 **Join Us:**
 
 Media channels</br>
+https://discord.gg/PxXRK8e</br>
 https://t.me/HyperLoot</br>
 https://twitter.com/Hyperloot</br>
 https://www.reddit.com/r/hyperloot/</br>
