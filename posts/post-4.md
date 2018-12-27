@@ -25,7 +25,7 @@ Airdrop is a hassle-free way to spread the word about Hyperloot and be rewarded 
 1. Go to HyperLoot AirDrop Bot and type in “start”, our bot will guide you
 2. Complete as many Bounty challenges as you can. The more items you check of the list the more HLT tokens you earn. Maximum bounty per person is 5,209 HLT or $1,302 provided all 12 challenges are successfully completed
 3. Submit your Ethereum wallet address and other details, tokens will be distributed on February 15, 2019 with no vesting
-4. Terms are limited to first 30,000 Telegram users, hurry up as the Bounty will run out soon
+4. Terms are limited to first 30,000 Telegram users, @hurry up as the Bounty will run out soon
 
 
 **Minimum requirements**
