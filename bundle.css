@@ -1004,6 +1004,53 @@ section h3 {
   }
 
 }
+.banner {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-image: url(/banner_back.png?3dadb2fa8efa8f846bf7ecfcb5f9756c);
+  background-color: #3d3d3f;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 5;
+}
+
+.banner a {
+  color: #fff;
+}
+
+.banner a p {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.banner a p span {
+  margin-left: 16px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .banner {
+    height: 60px;
+    top: 54px;
+  }
+  .banner a p {
+    font-size: 18px;
+    text-align: center;;
+  }
+  .banner a p span {
+    font-size: 14px;
+    margin-left: 0;
+  }
+}
 .page-about section h2 {
   font-size: 3rem;
 }
@@ -1015,6 +1062,7 @@ section h3 {
 section.promo {
   display: flex;
   min-height: 100vh;
+  padding-top: 8rem;
   background-image: url(/promo_section_bg.svg?86c9a70f82daea42fdd85bda8d8a9ccc);
   background-position: top right;
   background-repeat: no-repeat;
@@ -1618,6 +1666,7 @@ section.token {
 section.token .content {
   max-width: 32.5%;
   margin: 7.5% 20% 15% 20%;
+  padding-top: 8rem;
 }
 
 section.token h1 {
@@ -2016,7 +2065,7 @@ section.solutions {
   --grey-color: #a2a7ae;
   display: flex;
   min-height: 100vh;
-  padding: 8rem 0;
+  padding: 16rem 0 8rem 0;
   background-repeat: no-repeat;
 }
 
@@ -2191,7 +2240,7 @@ section.solutions-section.advisory-team .team-list {
 @media (max-width: 1368px) {
 
   section.solutions {
-    padding-top: 4rem;
+    padding-top: 12rem;
   }
 
   section.solutions h1 {
@@ -2275,7 +2324,7 @@ section.solutions-section.advisory-team .team-list {
 
 
 section.posts {
-  padding: 10rem 0 0 0;
+  padding: 12rem 0 0 0;
 }
 
 section.posts .posts-heading {
@@ -2499,7 +2548,7 @@ section#posts.posts:target .post-preview {
 @media (max-width: 700px) {
 
   section.posts {
-    padding: 5rem 0 0 0;
+    padding: 9rem 0 0 0;
   }
 
   section.posts .posts-tags.rectangular-tags ul li a {
@@ -2731,7 +2780,7 @@ section.post .post-footer .social a svg {
 @media (max-width: 700px) {
 
   .wrapper.post-page {
-    padding-top: 0rem;
+    padding-top: 4rem;
   }
 
   .post-page section.post {
