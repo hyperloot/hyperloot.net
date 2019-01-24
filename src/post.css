@@ -179,7 +179,7 @@ section.post .post-footer .social a svg {
 @media (max-width: 700px) {
 
   .wrapper.post-page {
-    padding-top: 0rem;
+    padding-top: 4rem;
   }
 
   .post-page section.post {

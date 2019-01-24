@@ -58,6 +58,7 @@ a {
 @import './buttons.css';
 @import './footer.css';
 @import './sidebar.css';
+@import './banner.css';
 
 /***** Pages *****/
 @import './about.css';

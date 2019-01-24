@@ -1,5 +1,5 @@
 section.posts {
-  padding: 10rem 0 0 0;
+  padding: 12rem 0 0 0;
 }
 
 section.posts .posts-heading {
@@ -223,7 +223,7 @@ section#posts.posts:target .post-preview {
 @media (max-width: 700px) {
 
   section.posts {
-    padding: 5rem 0 0 0;
+    padding: 9rem 0 0 0;
   }
 
   section.posts .posts-tags.rectangular-tags ul li a {

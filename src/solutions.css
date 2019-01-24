@@ -10,7 +10,7 @@ section.solutions {
   --grey-color: #a2a7ae;
   display: flex;
   min-height: 100vh;
-  padding: 8rem 0;
+  padding: 16rem 0 8rem 0;
   background-repeat: no-repeat;
 }
 
@@ -185,7 +185,7 @@ section.solutions-section.advisory-team .team-list {
 @media (max-width: 1368px) {
 
   section.solutions {
-    padding-top: 4rem;
+    padding-top: 12rem;
   }
 
   section.solutions h1 {

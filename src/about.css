@@ -9,6 +9,7 @@
 section.promo {
   display: flex;
   min-height: 100vh;
+  padding-top: 8rem;
   background-image: url(assets/about/promo_section_bg.svg);
   background-position: top right;
   background-repeat: no-repeat;

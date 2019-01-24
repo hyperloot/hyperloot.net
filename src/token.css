@@ -10,6 +10,7 @@ section.token {
 section.token .content {
   max-width: 32.5%;
   margin: 7.5% 20% 15% 20%;
+  padding-top: 8rem;
 }
 
 section.token h1 {
