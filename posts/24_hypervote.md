@@ -1,6 +1,6 @@
 ---
 title: Be a part of esports with Hyperloot
-image: /img/23_hypervote.png
+image: /img/24_hypervote.png
 excerpt: We've realeased the most exciting way to participate in esports! Pick your team, predict who wins and if they do - you are a winner as well. It's you chance to get a free GPU or other cool stuff!
 date: 28.01.2019
 author: Alex Vasilenka
