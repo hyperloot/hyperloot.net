@@ -1,20 +1,37 @@
 .join {
-  padding-top: 9rem;
-  padding-bottom: 15rem;
+  padding: 64px 0;
+  background-color: #F5F6F8;
+  background-image: url('../../assets/bg-contact.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 80% 0;
+}
+
+.join .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .join h2 {
   font-size: 3rem;
-  margin-bottom: 2rem;
+  text-transform: uppercase;
+  font-family: var(--font-family-title);
+}
+
+.join h2 span {
+  color: #DD2F2F;
 }
 
 .join .social {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
 }
 
 .join .social a {
-  --size: 6.5rem;
+  --size: 4rem;
   width: var(--size);
   height: var(--size);
   display: flex;
@@ -23,11 +40,11 @@
   border-radius: 50%;
   margin-right: 2rem;
   margin-bottom: 2rem;
-  border: 2px solid #dfe1e3;
+  border: 1px solid #CAD0D5;
 }
 
 .join .social a svg {
-  width: 3rem;
+  width: 1.5rem;
   fill: #bbbfc4;
 }
 
@@ -46,23 +63,24 @@
   background-color: #333333;
   color: #fff;
   font-size: 1.4rem;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding: 24px 0 24px;
+  font-family: var(--font-family-regular-light);
 }
 
 .footer a {
   display: flex;
   align-items: center;
   font-weight: 700;
-  text-transform: uppercase;
+  color: #cad0d5;
+  font-size: 14px;
 }
 
 .footer a:before {
   content: '';
-  width: 2.5rem;
-  height: 3rem;
-  margin-right: 3.2rem;
-  background-image: url(assets/icon_terms.png);
+  width: 1rem;
+  height: 1.4rem;
+  margin-right: 0.5rem;
+  background-image: url('../../assets/icons/icon_terms.png');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -73,32 +91,45 @@
   color: #fff;
 }
 
-@media (max-width: 740px) {
+.footer .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Gilroy;
+  font-size: 14px;
+  line-height: 24px;
+  color: #8f9295;
+  padding-top: 24px;
+  border-top: 1px solid #55606C;
+}
 
+.footer .bottom p {
+  margin: 0;
+  font-weight: 400;
+}
+
+.footer .bottom svg {
+  margin-right: 12px;
+}
+
+@media (max-width: 740px) {
   .join {
     padding-top: 8rem;
     padding-bottom: 8rem;
   }
-
   .join h2 {
     font-size: 2.4rem;
   }
-
   .join .social a {
     --size: 5rem;
   }
-
   .join .social a svg {
     width: 3rem;
   }
-
   .footer {
     font-size: 1.2rem;
   }
-
   .footer a:before {
     margin-right: 1.6rem;
   }
-
 }
-
