@@ -14,7 +14,7 @@
 }
 
 .join h2 {
-  font-size: 3rem;
+  font-size: 36px;
   text-transform: uppercase;
   font-family: var(--font-family-title);
 }
@@ -41,11 +41,13 @@
   margin-right: 2rem;
   margin-bottom: 2rem;
   border: 1px solid #CAD0D5;
+  transition: .3s;
 }
 
 .join .social a svg {
   width: 1.5rem;
   fill: #bbbfc4;
+  transition: .3s;
 }
 
 .join .social a:hover {
@@ -53,7 +55,7 @@
   border-color: var(--accent-color);
 }
 
-.join .social a:hover svg {
+.join .social a:hover path {
   fill: var(--accent-color);
 }
 
@@ -67,15 +69,53 @@
   font-family: var(--font-family-regular-light);
 }
 
-.footer a {
+.footer .top-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0;
+}
+
+.footer .terms {
   display: flex;
   align-items: center;
-  font-weight: 700;
+  font-family: var(--font-family-regular-light);
   color: #cad0d5;
+  font-size: 14px;
+  transition: .3s;
+}
+
+.footer .terms:hover {
+  color: var(--accent-color);
+}
+
+.footer .top-footer .think {
+  display: flex;
+  align-items: center;
   font-size: 14px;
 }
 
-.footer a:before {
+.footer .top-footer .think p span {
+  color: var(--accent-color);
+}
+
+.footer .top-footer .think .ping {
+  background: linear-gradient(151.19deg, #DD2F2F 18.65%, #EB5757 139.26%);
+  color: #fff;
+  padding: 12px 48px;
+  border-radius: 24px;
+  margin-left: 24px;
+  box-shadow: 0px 12px 12px rgba(235, 87, 87, 0.26);
+  transition: 0.3s;
+}
+
+.footer .top-footer .think .ping:hover{
+  background: linear-gradient(90deg, #DD2F2F 20.65%, #EB5757 109.26%);
+  box-shadow: 0px 2px 2px rgba(235, 87, 87, 0.26);
+  background-size: 150%;
+}
+
+.footer .terms:before {
   content: '';
   width: 1rem;
   height: 1.4rem;
@@ -86,7 +126,7 @@
   background-repeat: no-repeat;
 }
 
-.footer a span {
+.footer .terms span {
   margin: 0 0.6rem;
   color: #fff;
 }
@@ -95,7 +135,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: Gilroy;
   font-size: 14px;
   line-height: 24px;
   color: #8f9295;
@@ -131,5 +170,44 @@
   }
   .footer a:before {
     margin-right: 1.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer .top-footer {
+    flex-direction: column-reverse;
+  }
+  .footer .top-footer .think p {
+    text-align: center;
+    font-size: 16px;
+  }
+  .footer .top-footer .think p span {
+    display: block;
+    margin-top: 6px;
+  }
+  .footer .top-footer .think .ping {
+    margin: 0px 0 24px;
+  }
+  .join .container {
+    flex-direction: column;
+  }
+  .join .social a svg {
+    width: 2rem;
+  }
+  .join .social a {
+    --size: 4rem;
+  }
+  .join h2 {
+    font-size: 36px;
+  }
+  .footer .bottom {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer .bottom svg {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 12px;
   }
 }

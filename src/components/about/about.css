@@ -13,15 +13,15 @@ section.promo {
 }
 
 section.promo .content {
-  padding: 64px;
+  padding: 12rem;
 }
 
 section.promo .content .promo-image {
   position: absolute;
   right: 0;
   top: 0;
-  width: 47%;
-  max-width: 800px;
+  width: 100%;
+  max-width: 900px;
 }
 
 section.promo .content .promo-image img {
@@ -31,14 +31,14 @@ section.promo .content .promo-image img {
 section.promo .content p {
   text-transform: uppercase;
   color: #55606C;
-  font-size: 17px;
+  font-size: 18px;
   padding-bottom: 24px;
 }
 
 section.promo .content .about {
   display: flex;
   align-items: flex-end;
-  margin-bottom: 6rem;
+  margin-bottom: 12rem;
   font-family: 'Gilroy';
   font-size: 1.4rem;
   text-transform: uppercase;
@@ -48,7 +48,7 @@ section.promo .content .about {
 section.promo .content h1 {
   margin: 0 0 5rem 0;
   font-family: var(--font-family-title);
-  font-size: 6rem;
+  font-size: 64px;
   text-transform: uppercase;
 }
 
@@ -60,12 +60,16 @@ section.promo .content .links {
   display: flex;
 }
 
-section.promo .content .links a:first-of-type {
-  margin-right: 1.6rem;
+section.promo .content .links a {
+  transition: 0.2s;
+}
+
+section.promo .content .links a:hover {
+  color: #000;
 }
 
 section.features {
-  padding: 64px 0;
+  padding: 128px 0;
   background-image: url('../../assets/about/about_section_bg.png');
   background-size: cover;
   background-repeat: no-repeat;
@@ -86,7 +90,7 @@ section.features .true-vision {
   text-transform: uppercase;
   color: #55606C;
   font-weight: bold;
-  font-size: 17px;
+  font-size: 18px;
   padding-top: 64px;
 }
 
@@ -98,7 +102,7 @@ section.features .banners-block {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-top: 24px;
+  padding-top: 48px;
   max-width: 900px;
 }
 
@@ -124,6 +128,7 @@ section.features .banners-block .banner-item img {
 
 section.features .features-block {
   display: flex;
+  padding-bottom: 48px;
 }
 
 section.features .features-block .features-item {
@@ -134,7 +139,7 @@ section.features .features-block .features-item {
 .features-block .features-item h3 {
   text-transform: uppercase;
   margin: 0 0 12px;
-  font-size: 5rem;
+  font-size: 48px;
   color: #ccc;
   font-family: var(--font-family-title);
   position: relative;
@@ -148,14 +153,14 @@ section.features .features-block .features-item {
   background: var(--accent-color);
   width: 5px;
   height: 5px;
-  bottom: 14px;
-  right: -6px;
+  bottom: 13px;
+  right: -8px;
 }
 
 section.features .features-block .features-item p {
   width: 85%;
-  font-size: 16 px;
-  line-height: 28px;
+  font-size: 18px;
+  line-height: 30px;
 }
 
 .mobile-show {
@@ -259,6 +264,12 @@ section.opportunities {
   height: 50px;
   margin-top: -2px;
   font-size: 14px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.opportunities-block .item .text .send button:hover {
+  color: #000;
 }
 
 .opportunities-block .item .text .send input {
@@ -268,10 +279,11 @@ section.opportunities {
 
 section.everything {
   position: relative;
-  padding: 96px 0;
+  padding: 128px 0;
   background-color: #f5f6f8;
   background-image: url('../../assets/everything-bg.svg');
   background-repeat: no-repeat;
+  background-position: right;
 }
 
 section.everything .content {
@@ -295,11 +307,15 @@ section.everything:after {
   position: absolute;
   right: 0;
   top: -20rem;
-  height: 40rem;
-  width: 21rem;
-  background-image: url('../../assets/about/roshan_bg.svg');
+  height: 425px;
+  width: 280px;
+  background-image: url('../../assets/elf.png');
   background-repeat: no-repeat;
   pointer-events: none;
+}
+
+section.everything .content .text {
+  margin-right: 64px;
 }
 
 section.everything .content .text p {
@@ -307,12 +323,14 @@ section.everything .content .text p {
   color: #55606C;
   font-family: var(--font-family-regular-light);
   line-height: 1.5;
+  font-size: 18px;
 }
 
 section.everything .content ul {
   display: flex;
   flex-wrap: wrap;
   margin-top: 48px;
+  max-width: 650px;
 }
 
 section.everything .content ul li {
@@ -324,7 +342,7 @@ section.everything .content ul li {
   background-repeat: no-repeat;
   background-position: 6px center;
   background-size: 34px;
-  font-size: 16px;
+  font-size: 18px;
   height: 40px;
   display: flex;
   align-items: center;
@@ -334,117 +352,76 @@ section.everything .content ul li:last-child {
   background-image: url('../../assets/icons/people.svg');
 }
 
-.roles-block {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+.opportunities-block .item .text p {
+  font-family: var(--font-family-regular-light);
+  font-size: 16px;
+  line-height: 28px;
 }
 
-.roles-block .item {
-  width: 44%;
-  display: flex;
-  align-items: flex-start;
-}
-
-.roles-block .item .icon {
-  min-width: 6.5rem;
-  min-height: 5.5rem;
-  margin-right: 1.2rem;
-  flex: 0;
-  background-position: left center;
-  background-repeat: no-repeat;
-}
-
-.roles-block .item h4 {
-  font-family: 'Gilroy';
-  margin: 0 0 1rem 0;
-  font-size: 1.4rem;
-  color: #000;
-  text-transform: uppercase;
-}
-
-.roles-block .item p {
-  width: 85%;
-  margin: 0;
-  font-size: 1.4rem;
-  line-height: 1.5;
-  color: #5c646e;
-}
-
-.roles-block .item:first-of-type {
-  margin-bottom: 6rem;
-}
-
-.roles-block .item:nth-of-type(2) {
-  margin-bottom: 6rem;
+.main-mobile {
+  display: none;
 }
 
 @media (max-width: 1440px) {
-  section.promo {
-    background-size: 50%;
+  section.promo .content .promo-image {
+    max-width: 650px;
   }
-  section.features {
-    padding: 7rem 0 16rem 0;
+  section.promo .content {
+    padding: 9rem;
+  }
+  section.promo .content h1 {
+    font-size: 48px;
   }
   section.features h2 {
-    padding-bottom: 10rem;
+    padding-bottom: 7rem;
   }
-  .features-block .features-item {
-    width: 22%;
+  section.features .features-block {
+    padding-bottom: 0;
   }
-  .features-block .features-item:first-of-type {
-    margin-right: 1%;
+  section.everything:after {
+    background-size: 200px;
+    width: 200px;
+    top: -160px;
   }
 }
 
 @media (max-width: 1024px) {
   section.promo {
     background-size: 40%;
+    overflow: hidden;
+  }
+  section.promo .content .promo-image {
+    right: -200px;
+    max-width: 500px;
+  }
+  .opportunities-block .item {
+    flex-basis: 100%;
   }
   section.promo .content {
-    /* margin-top: auto; */
+    padding: 5rem;
   }
-  section.features {
-    background-image: none;
-    background-color: #f5f5f6;
-    padding-bottom: 7rem;
+  section.promo .content h1 {
+    font-size: 36px;
   }
-  section.features h2 {
-    padding-bottom: 6rem;
+  section.everything {
+    background-size: cover;
   }
-  .features-block {
-    flex-wrap: wrap;
+  section.everything .content {
+    flex-direction: column;
   }
-  .features-block .features-item {
-    width: 47.5%;
-    margin-left: 0;
-    margin-right: 0;
+  section.everything .content ul {
+    padding-left: 0;
   }
-  .features-block .features-item:first-of-type {
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 3.8rem;
+  section.everything .content ul li {
+    flex-basis: 100%;
   }
-  .features-block .features-item:not(:last-of-type) {
-    margin-right: 0;
-  }
-  .features-block .features-item:first-of-type:before {
-    display: none;
-  }
-  .features-block .features-item:nth-of-type(3) {
-    margin-right: 0;
-  }
-  section.opportunities {
-    padding: 7rem 0;
-  }
-  .opportunities-block {
-    margin-bottom: 4rem;
+  .footer .top-footer .think {
+    flex-direction: column;
   }
   section.everything:after {
-    height: 30rem;
-    width: 14rem;
-    bottom: -15rem;
-    background-size: contain;
+    width: 150px;
+    background-size: 150px;
+    top: -100px;
   }
 }
 
@@ -456,126 +433,123 @@ section.everything .content ul li:last-child {
     width: 100%;
     margin-bottom: 3.2rem;
   }
-  .developers-block {
+}
+
+@media (max-width: 480px) {
+  .opportunities-block .item {
     flex-direction: column;
+    margin-bottom: 48px;
   }
-  .developers-block div {
-    width: 100%;
+  .opportunities-block .item .img {
+    margin-bottom: 12px;
   }
-  .developers-block .gamers {
-    border-radius: 1.5rem 1.5rem 0 0;
-    border-right: none;
-    border-bottom: 0.2rem solid #fff;
+  section.everything .content .text {
+    margin-right: 0;
   }
-  .developers-block .gamers:after {
-    right: calc(50% - 3.6rem);
-    top: calc(100% - 3.6rem);
+  section.everything .content h2 {
+    font-size: 30px;
   }
-  .developers-block .developers {
-    border-radius: 0 0 1.5rem 1.5rem;
-    border-left: none;
-    border-top: 0.2rem solid #fff;
+  section.everything .content h2 span {
+    font-size: 86px;
+  }
+  section.features .features-block {
+    flex-wrap: wrap;
+  }
+  section.features .features-block .features-item {
+    flex-basis: 100%;
+    display: flex;
+    margin-bottom: 24px;
+  }
+  section.features .features-block .features-item p {
+    width: 80%;
+    margin-right: 12px;
+    margin-left: 24px;
+  }
+  .features-block .features-item h3 {
+    width: 38px;
+    height: 54px;
+  }
+  section.features h2 {
+    padding-bottom: 5rem;
+  }
+  section.features .banners-block .banner-item {
+    flex-basis: 30%;
+    max-height: 50px;
+  }
+  section.features {
+    padding: 44px 0;
+  }
+  .opportunities-block .item h2 {
+    font-size: 36px;
+    line-height: 39px;
+  }
+  section.opportunities {
+    padding: 44px 0 64px;
+  }
+  section.promo .content .about {
+    margin-bottom: 6rem;
+  }
+  section.promo .content .about img {
+    width: 180px;
+  }
+  section.promo .content p {
+    width: 170px;
+  }
+  section.promo .content {
+    padding: 60px 30px;
+  }
+  section.promo .content h1 {
+    width: 300px;
+    margin-top: 72px;
+  }
+  .main-desktop {
+    display: none;
+  }
+  .main-mobile {
+    display: block;
+  }
+  section.everything {
+    padding-bottom: 64px;
+  }
+  section.everything:after {
+    content: '';
+    position: absolute;
+    right: 50%;
+    top: -100px;
+    height: 200px;
+    width: 200px;
+    transform: translateX(20%);
+    background-size: 200px;
+    background-image: url('../../assets/elf-mobile.png');
   }
 }
 
-@media (max-width: 740px) {
-  section.promo {
-    margin: auto 0;
-    padding: 0 7.5%;
-    background-size: 50%;
-    background-image: url('../../assets/about/promo_section_mobile_bg.svg');
+@media (max-width: 320px) {
+  section.promo .content .promo-image {
+    right: 0;
+    max-width: 170px;
   }
-  section.promo .content {
-    margin: auto;
+  .opportunities-block .item .text .send input {
+    width: 165px;
   }
-  section.promo .content .about {
-    margin-bottom: 5rem;
+  section.everything .content h2 span {
+    font-size: 75px;
   }
-  section.promo .content h1 {
-    font-size: 3.6rem;
-  }
-  section.promo .content .links {
-    flex-wrap: wrap;
-    width: 100%;
-  }
-  section.promo .content .links a {
-    width: 45%;
-  }
-  section.promo .content .links a:first-of-type {
-    margin-right: 1.2rem;
-  }
-  section.promo .content .links .button-link {
-    padding: 1.6rem 0rem;
-  }
-  section.features {
-    background-color: #f5f6f8;
-    background-position: bottom;
-  }
-  section.features h2 {
-    padding-bottom: 3.2rem;
-  }
-  section.features .features-block .features-item {
-    width: 100%;
-    margin-bottom: 3.2rem;
-  }
-  section.features .features-block .features-item:first-of-type {
-    padding-bottom: 0;
-    margin-bottom: 3.2rem;
-    margin-left: 0;
-    margin-right: 0;
-  }
-  .features-block .features-item p {
-    width: 100%;
-  }
-  .opportunities-block {
-    margin-bottom: 5rem;
-  }
-  .opportunities-block .item .number {
-    line-height: 1;
-  }
-  .opportunities-block .item h3 {
-    line-height: 1;
-    margin-bottom: 2rem;
-    margin-top: 1rem;
-  }
-  .opportunities-block .item:not(:last-of-type) {
-    margin-bottom: 7rem;
-  }
-  .opportunities-block .item p {
-    margin-bottom: 0;
-  }
-  .developers-block .gamers {
-    padding: 4rem 3rem 5rem 3rem;
-  }
-  .developers-block .developers {
-    padding: 4rem 3rem 3rem 3rem;
-  }
-  section.everything {
-    padding: 5rem 0rem 6rem 0;
+  section.everything .content h2 {
+    font-size: 25px;
   }
   section.everything:after {
-    display: none;
+    background-size: 150px;
+    height: 150px;
+    width: 150px;
+    top: -75px;
   }
-  section.everything h2 {
-    margin-bottom: 5rem;
+  section.promo .content p {
+    width: 150px;
+    font-size: 15px;
   }
-  .roles-block .item {
-    margin-bottom: 4rem;
-  }
-  .roles-block .item:first-of-type {
-    margin-bottom: 4rem;
-  }
-  .roles-block .item:nth-of-type(2) {
-    margin-bottom: 4rem;
-  }
-  .roles-block .item .icon {
-    margin-right: 1.2rem;
-  }
-  .roles-block {
-    flex-wrap: wrap;
-  }
-  .roles-block .item {
-    width: 100%;
+  section.everything {
+    padding: 72px 0 64px;
   }
 }
 
