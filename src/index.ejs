@@ -37,46 +37,112 @@
 
         <div class="posts-heading">
           <h2><a href="/posts">Blog</a></h2>
+          <div class="followers">28 followers</div>
         </div>
 
         <div class="posts-tags rectangular-tags">
           <ul id="posts-tag">
-            <li><a class="tag" href="#posts">All posts</a>
-              <% postsData.forEach(function(post, item){ %>
-            <li><a class="tag" href="#<%= post.attributes.tags %>"><%= post.attributes.tags %></a></li>
-            <%})%>
+            <li>
+              <a class="tag" href="#posts">All posts</a>
+            </li>
+            <% for(var i=0; i < 4 ; i++) {%>
+            <li>
+              <a class="tag" href="#<%= postsData[i].attributes.tags %>">
+                <%= postsData[i].attributes.tags %>
+              </a>
+            </li>
+            <%} %>
+
+            <div class="hidden-tags" id="hidden-tags">
+              <% for(var i=4; i < postsData.length-1 ; i++) {%>
+              <li>
+                <a class="tag" href="#<%= postsData[i].attributes.tags %>">
+                  <%= postsData[i].attributes.tags %>
+                </a>
+              </li>
+              <%} %>
+            </div>
           </ul>
+
+          <div class="more" id="more-tags">
+            <div class="icon-more" id="icon-more">
+              <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M5.95462 6.78327L1.22399 2.25765C0.922083 1.96883 0.922083 1.50299 1.22399 1.21417C1.52589 0.925354 2.01283 0.925354 2.3123 1.21417L6.49756 5.21806L10.6853 1.2165C10.9847 0.927683 11.4741 0.927683 11.7736 1.2165C12.0755 1.50299 12.0755 1.97116 11.7736 2.25765L7.04293 6.78327C6.89198 6.92768 6.69477 6.99989 6.49756 6.99989C6.30278 6.99989 6.10557 6.92768 5.95462 6.78327Z"
+                  fill="#F53743" />
+              </svg>
+
+            </div>
+            <div class="button-more">
+              More
+            </div>
+          </div>
         </div>
 
         <div class="post-list">
-          <% postsData.forEach(function(post, item){ %>
-          <div id="<%= post.attributes.tags %>" class="post-preview">
-            <div class="image">
-              <a href="/posts/<%= post.filename %>">
-                <img src="<%= post.attributes.image %>" alt="post-preview">
-              </a>
-            </div>
-            <div class="preview">
-              <div class="preview-header">
-                <div class="date"><%= post.attributes.date %></div>
-              </div>
-              <div class="preview-body">
-                <a href="/posts/<%= post.filename %>">
-                  <h3><%= post.attributes.title %></h3>
+          <div class="last-posts">
+            <% for(var i=postsData.length-2; i < postsData.length ; i++) {%>
+            <div id="<%= postsData[i].attributes.tags %>" class="post-preview">
+              <div class="image">
+                <a href="/posts/<%= postsData[i].filename %>">
+                  <img src="<%= postsData[i].attributes.image %>" alt="post-preview">
                 </a>
-                <p><%= post.attributes.excerpt %></p>
               </div>
-              <div class="preview-footer preview-footer-short">
-                <div class="author">
-                  by <span><%= post.attributes.author %></span>
+              <div class="preview">
+                <div class="preview-header">
+                  <div class="date"><%= postsData[i].attributes.date %></div>
                 </div>
-                <div class="discuss">
-                  <a href="https://discord.gg/My3PfqK" class="button-link section-link">Discuss</a>
+                <div class="preview-body">
+                  <a href="/posts/<%= postsData[i].filename %>">
+                    <h3><%= postsData[i].attributes.title %></h3>
+                  </a>
+                  <p><%= postsData[i].attributes.excerpt %></p>
+                </div>
+                <div class="preview-footer preview-footer-short">
+                  <div class="author">
+                    by <span><%= postsData[i].attributes.author %></span>
+                  </div>
+                  <div class="discuss">
+                    <a href="https://discord.gg/My3PfqK" class="button-link section-link">Discuss</a>
+                  </div>
                 </div>
               </div>
             </div>
+            <% } %>
           </div>
-          <% }); %>
+
+          <div class="hidden-posts" id="hidden-posts">
+            <% for(var i=0; i < postsData.length-2 ; i++) {%>
+            <div id="<%= postsData[i].attributes.tags %>" class="post-preview">
+              <div class="image">
+                <a href="/posts/<%= postsData[i].filename %>">
+                  <img src="<%= postsData[i].attributes.image %>" alt="post-preview">
+                </a>
+              </div>
+              <div class="preview">
+                <div class="preview-header">
+                  <div class="date"><%= postsData[i].attributes.date %></div>
+                </div>
+                <div class="preview-body">
+                  <a href="/posts/<%= postsData[i].filename %>">
+                    <h3><%= postsData[i].attributes.title %></h3>
+                  </a>
+                  <p><%= postsData[i].attributes.excerpt %></p>
+                </div>
+                <div class="preview-footer preview-footer-short">
+                  <div class="author">
+                    by <span><%= postsData[i].attributes.author %></span>
+                  </div>
+                  <div class="discuss">
+                    <a href="https://discord.gg/My3PfqK" class="button-link section-link">Discuss</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <% } %>
+          </div>
+
+          <div class="visible-posts-button" id="visible-posts">View more</div>
         </div>
 
       </div>
@@ -85,7 +151,8 @@
 
 
 
-      <%= require('components/footer/_footer.html') %>
+
+    <%= require('components/footer/_footer.html') %>
 
   </div>
 
@@ -99,6 +166,9 @@
       let postSection = document.getElementById('posts');
       let tags = document.querySelectorAll('.tag');
       let tag = e.target;
+
+      let hiddenPosts = document.getElementById('hidden-posts');
+      hiddenPosts.classList.add('visible-posts');
 
       //reset previous tag active class and add active class for the choosed tag
       tags.forEach(element => element.classList.remove('active'));
@@ -118,6 +188,25 @@
 
     setPostDate();
 
+    let postVisible = document.getElementById('visible-posts');
+
+    postVisible.addEventListener('click', e => {
+      let hiddenPosts = document.getElementById('hidden-posts');
+      let buttonVisible = document.getElementById('visible-posts');
+
+      hiddenPosts.classList.add('visible-posts');
+      buttonVisible.classList.add('hidden-button');
+    });
+
+    let moreTagsButton = document.getElementById('more-tags')
+
+    moreTagsButton.addEventListener('click', e => {
+      let hiddenTags = document.getElementById('hidden-tags');
+      let rotateIconMoreTags = document.getElementById('icon-more');
+
+      hiddenTags.classList.toggle('visible-tags');
+      rotateIconMoreTags.classList.toggle('rotate-icon');
+    });
   </script>
 
 </body>
