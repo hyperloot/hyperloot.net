@@ -4,6 +4,8 @@ section.posts {
 
 section.posts .posts-heading {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   text-transform: uppercase;
   margin-bottom: 2.4rem;
   align-items: flex-start;
@@ -43,19 +45,19 @@ section.posts .posts-tags .hidden-tags {
   transform: rotateY(30deg) translateY(-30%);
 }
 
-section.posts .posts-tags .hidden-tags.visible-tags {
+section.posts .hidden-tags.visible-tags {
   opacity: 1;
   visibility: visible;
   display: flex;
   transform: rotateY(0deg) translateY(0%);
 }
 
-section.posts .posts-tags .icon-more {
+section.posts .icon-more {
   transform: rotate(0deg);
   transition: .3s;
 }
 
-section.posts .posts-tags .icon-more.rotate-icon {
+section.posts .icon-more.rotate-icon {
   transform: rotate(180deg);
 }
 
@@ -79,16 +81,17 @@ section.posts .posts-tags.rectangular-tags {
   justify-content: space-between;
 }
 
-section.posts .posts-tags.rectangular-tags .more {
+section.posts .more {
   color: var(--accent-color);
   font-size: 16px;
   padding-left: 18px;
   cursor: pointer;
   display: flex;
   align-items: center;
+  text-transform: capitalize;
 }
 
-section.posts .posts-tags.rectangular-tags .more svg {
+section.posts .more svg {
   margin: 0 5px 2px;
 }
 
@@ -305,6 +308,10 @@ section#posts.posts:target .post-preview {
   color: #000;
 }
 
+.mobile-more {
+  display: none;
+}
+
 @media(max-width: 1360px) {
   section.posts .posts-tags .hidden-tags {
     margin-left: 0;
@@ -362,4 +369,25 @@ section#posts.posts:target .post-preview {
   section.posts .button-link {
     width: 75%;
   }
+}
+
+@media(max-width: 480px) {
+  section.posts .desktop-more {
+    display: none;
+  }
+  section.posts .mobile-more {
+    display: flex;
+    margin-top: 12px;
+    padding-left: 0;
+  }
+
+  section.posts .container {
+    width: 100%;
+    max-width: 100%;
+  }
+  .posts-heading, .posts-tags, .post-preview .preview  {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  
 }
