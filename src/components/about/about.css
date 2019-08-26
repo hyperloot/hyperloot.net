@@ -346,7 +346,7 @@ section.everything .content ul li {
   height: 40px;
   display: flex;
   align-items: center;
-  background-image: url('../../assets/icons/document.png');
+  background-image: url('../../assets/icons/hyper_doc.svg');
 }
 
 section.everything .content ul li:last-child {
