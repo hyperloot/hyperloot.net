@@ -341,15 +341,17 @@ section.everything .content ul li {
   padding-left: 54px;
   background-repeat: no-repeat;
   background-position: 6px center;
-  background-size: 34px;
+  background-size: 27px;
   font-size: 18px;
   height: 40px;
   display: flex;
   align-items: center;
+  background-image: url('../../assets/icons/document.png');
 }
 
 section.everything .content ul li:last-child {
   background-image: url('../../assets/icons/people.svg');
+  background-size: 32px;
 }
 
 .opportunities-block .item .text p {
@@ -382,6 +384,14 @@ section.everything .content ul li:last-child {
     background-size: 200px;
     width: 200px;
     top: -160px;
+  }
+  section.everything .content ul li {
+    background-size: 18px;
+    font-size: 14px;
+    padding-left: 36px;
+  }
+  section.everything .content ul li:last-child {
+    background-size: 22px;
   }
 }
 
