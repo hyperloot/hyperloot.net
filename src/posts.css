@@ -8,7 +8,7 @@ section.posts .posts-heading {
   justify-content: space-between;
   text-transform: uppercase;
   margin-bottom: 2.4rem;
-  align-items: flex-start;
+  align-items: center;
 }
 
 section.posts .posts-heading .followers {
@@ -16,6 +16,10 @@ section.posts .posts-heading .followers {
   margin-top: 6px;
   margin-left: 6px;
   color: #55606C;
+}
+
+section.posts .posts-heading .title {
+  display: flex;
 }
 
 section.posts .posts-heading h2 {
@@ -308,7 +312,7 @@ section#posts.posts:target .post-preview {
   color: #000;
 }
 
-.mobile-more {
+section.posts .mobile-more {
   display: none;
 }
 
@@ -328,6 +332,13 @@ section#posts.posts:target .post-preview {
   section.posts .button-link {
     width: 30%;
   }
+  section.posts .desktop-more {
+    display: none;
+  }
+  section.posts .mobile-more {
+    display: flex;
+  }
+
 }
 
 @media (max-width: 700px) {
@@ -376,18 +387,16 @@ section#posts.posts:target .post-preview {
     display: none;
   }
   section.posts .mobile-more {
-    display: flex;
+    display: flex !important;
     margin-top: 12px;
     padding-left: 0;
   }
-
   section.posts .container {
     width: 100%;
     max-width: 100%;
   }
-  .posts-heading, .posts-tags, .post-preview .preview  {
+  .posts-heading, .posts-tags, .post-preview .preview {
     max-width: 90%;
     margin: 0 auto;
   }
-  
 }

@@ -122,12 +122,13 @@
   .sidebar .red {
     width: 50px;
   }
-}
-
-@media (max-width: 500px) {
   .sidebar {
     display: none;
   }
+}
+
+@media (max-width: 500px) {
+  
   section.promo .container {
     margin: 0;
   }
